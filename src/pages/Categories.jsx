@@ -1,6 +1,12 @@
+import Footer from "../components/Footer/Footer"
+import NavBar from "../components/Navbar/NavBar"
+
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div>
+      <NavBar />
+      <Footer />
+    </div>
   )
 }
 export default Categories
