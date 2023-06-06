@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Style adjustments for faq coomponent library used */
 .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c{
   border-bottom: none;
   background-color: #DEF2F5;
@@ -13,21 +15,37 @@
 .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c .expanded{
   border: none;
 }
+.styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_icon-wrapper__2cftw{
+  top: auto;
+}
+
+.row-title-text{
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 20px;
+}
+.row-content-text{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 18px;
+}
+@media(max-width:600px){
+  .row-title-text{
+    font-size: 18px;
+  }
+  .row-content-text{
+    font-size: 16px;
+  }
+}
 .faq-body{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
+/* react-slick library */
 .slick-track{
   display: flex;
   flex-direction: row;
   gap:50px;
-  padding: 100px;
-
-}
-.slick-slide{
-  transform: rotate(-20deg);
-}
-.slick-slider .slick-track, .slick-slider .slick-list{
-  transform: rotate(20deg);
 }

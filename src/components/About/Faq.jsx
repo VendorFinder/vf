@@ -4,7 +4,7 @@ const data = {
   rows: [
     {
       title: 'How does VendorFinder connect event vendors with people looking to hire them for events?',
-      content: 'Answer 1',
+      content: 'VendorFinder acts as a centralized platform where event vendors can create profiles and showcase their services, while individuals and organizations seeking event vendors can browse through the listings. Users can search for vendors based on their specific requirements, view vendor profiles, and directly contact them to discuss their event needs.',
     },
     {
       title: 'Are the event vendors on VendorFinder vetted or verified in any way?',
@@ -12,15 +12,15 @@ const data = {
     },
     {
       title: 'What types of event vendors can I find on VendorFinder?',
-      content: 'Answer 2',
+      content: 'VendorFinder offers a wide range of event vendors to cater to various needs. You can find vendors specializing in catering, photography, entertainment, décor, venue rentals, and more. We strive to provide a comprehensive selection of vendors to ensure you find the perfect fit for your event.',
     },
     {
       title: 'How can I search for event vendors on VendorFinder?',
-      content: 'Answer 2',
+      content: 'You can easily search for event vendors on  VendorFinder using our intuitive search feature. Simply enter the type of vendor you are looking for and our search results will display relevant vendors.',
     },
     {
       title: 'Is there a fee for using VendorFinder to hire event vendors?',
-      content: 'Answer 2',
+      content: 'VendorFinder is free to use for individuals looking to hire event vendors. There are no charges or fees imposed by our platform. However, keep in mind that individual vendors may have their own pricing structure and fees for their services, which will be discussed directly between you and the vendor.',
     },
     // Add more rows as needed
   ],
@@ -45,6 +45,6 @@ const config = {
 
 export default function Faq() {
   return (
-    <FAQ data={data} config={config} />
+    <FAQ data={data} config={config} titleClassName="font-[700] text-[20px] " />
   )
 }

@@ -58,7 +58,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="absolute lg:top-0 lg:left-[30px] bottom-[30px] min-w-full left-0 z-[-1] bg-about-3 lg:min-h-[540px] min-h-[300px] lg:min-w-[444px] xl:min-w-[544px] bg-cover bg-no-repeat">
+            <div className="absolute lg:top-0 lg:right-[30px] bottom-[30px] min-w-full right-0 z-[-1] bg-about-3 lg:min-h-[540px] min-h-[300px] lg:min-w-[444px] xl:min-w-[544px] bg-cover bg-no-repeat">
               {/* <img className="bg-black" src={bg2} alt="" /> */}
             </div>
           </div>
@@ -66,14 +66,14 @@ const About = () => {
         <section className="mt-[116px] md:px-[120px] sm:px-[30px]">
           <div className="relative min-h-[647px] flex justify-end bg-contain bg-no-repeat">
               <img className="absolute h-full z-[-1]" src={arrowdownbg} alt="bg" />
-              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[40px] top-[120px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center h-full min-h-[406px] whitespace-nowrap">WHAT WE ARE ALL ABOUT </span>
+              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[0px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center h-full min-h-[406px] whitespace-nowrap">WHAT WE ARE ALL ABOUT </span>
               <div className="absolute sm:left-[20%] left-[50%] lg:left-[100px] xl:left-[140px] lg:top-0 xl:top-[-30px] sm:bottom-[-186px] bottom-[-106px] transform -translate-x-1/2 sm:-translate-x-0">
                 <img className="rounded-[10px] xl:max-w-[433px] lg:max-w-[350px] sm:max-w-[333px] max-w-[261px]" src={cook} alt="" />
               </div>
             <div className=" w-[90%] pt-[41px] flex flex-col items-start gap-[30px] xl:pl-[500px] lg:pl-[400px] pb-[350px] md:pb-[438px] lg:pb-0">
               <div className="flex flex-col gap-[18px] pr-[50px]" >
               <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px]">We offer you the best people for your celebrations.</h2>
-              <p className="font-lato sm:text-[18px] text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p className="font-lato sm:text-[18px] text-[16px]">We strive to make the vendor selection process seamless, reliable, and enjoyable, ultimately contributing to the success and unforgettable nature of every celebration. </p>
               </div>
               <div className="bg-[#04172A] bg-opacity-80 font-lato flex p-[18px] sm:w-[80%] w-[90%] justify-between ">
                 <div className="flex flex-col gap-[10px] text-white flex flex-col items-center">
@@ -95,7 +95,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="md:px-[100px] px-[30px] mt-[131px] transform rotate-[20deg]">
+        <section className="md:px-[100px] px-[30px] mt-[131px]">
           <Slide/>
         </section>
         <section className="md:px-[120px] spx-[30px] mt-[131px]">
@@ -109,7 +109,7 @@ const About = () => {
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
                   <h3 className="text-[#04172A] font-playfair sm:text-[25px] text-[20px] font-[700]">Bespoke Weddings</h3>
-                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Immerse yourself in the enchantment of our curated weddings, where love and creativity intertwine, brought to life by our talented vendors.</p>
                 </div>
               </div>
               <div className="flex  flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
@@ -119,7 +119,7 @@ const About = () => {
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
                   <h3 className="text-[#04172A] font-playfair sm:text-[25px] text-[20px] font-[700]">Birthday Celebrations</h3>
-                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Ignite your imagination with a glimpse into a remarkable birthday celebration that bursts with joy and wonder organized by our vendors.</p>
                 </div>
               </div>
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
@@ -129,7 +129,7 @@ const About = () => {
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
                   <h3 className="text-[#04172A] font-playfair sm:text-[25px] text-[20px] font-[700]">Religious Celebrations</h3>
-                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Experience the reverence and cultural significance of a heartfelt religious celebration brought to life by our esteemed vendors.</p>
                 </div>
               </div>
               <div className="flex flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
@@ -139,13 +139,17 @@ const About = () => {
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
                   <h3 className="text-[#04172A] font-playfair sm:text-[25px] text-[20px] font-[700]">Business Events</h3>
-                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p className="text-[16px] sm:text-[18px] font-lato text-[#555C69] font-[400]">Gain inspiration from successful and exciting business events and conferences orchestrated by our professional vendors. </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section className="md:px-[100px] px-[30px] mt-[131px]">
+          <div className="flex flex-col gap-[20px] mb-[50px]">
+            <h2 className="font-playfair font-[700] sm:text-[35px] text-[30px] text-center text-[#04172A]">The What Do You Want To Know?</h2>
+            <span className="font-playfair font-[700] sm:text-[25px] text-[20px] text-center text-[#04172A]">Suggested Questions</span>
+          </div>
           <Faq/>
         </section>
       </main>
