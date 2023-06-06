@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-2.5 px-6 rounded-[10px];
+  }
+  .btn-Primary {
+    @apply bg-primary text-white hover:bg-[#0F62AF];
+  }
+  .btn-Secondary {
+    @apply bg-[#F5F5F5] text-[#0C4E8B]  hover:bg-[#0c4e8b] hover:text-white border-2 border-[#555C69] hover:border-0;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
