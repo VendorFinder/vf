@@ -43,13 +43,17 @@ export default function Slide() {
   
   return (
     <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto  ">
-      <div className="bg-[#DEF2F5] w-full h-[426px] ">
+      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
+        <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
       </div>
-      <div className="bg-[#DEF2F5] w-full h-[426px] ">
+      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
+      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
       </div>
-      <div className="bg-[#DEF2F5] w-full h-[426px] ">
+      <div className=" relative bg-[#DEF2F5] w-full h-[426px]">
+      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
       </div>
-      <div className="bg-[#DEF2F5] w-full h-[426px] ">
+      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
+      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
       </div>
     </Slider>
   );

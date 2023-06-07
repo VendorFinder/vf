@@ -19,7 +19,7 @@ const About = () => {
   return (
     <div>
       <NavBar />
-      <main className="max-w-[1400px] mx-auto">
+      <main className="max-w-[1400px] mx-auto mb-[78px]">
         <section className="flex justify-center h-[615px] items-center bg-about-hero bg-t-black">
           <div className="font-playfair border border-[0.5px] py-[48px] sm:w-[547px] w-[90%] mx-auto text-center">
             <h1 className="font-[700] md:text-[50px] text-[35px] text-[#FFFFFF]">WHO ARE WE</h1>
@@ -66,7 +66,7 @@ const About = () => {
         <section className="mt-[116px] md:px-[120px] sm:px-[30px]">
           <div className="relative min-h-[647px] flex justify-end bg-contain bg-no-repeat">
               <img className="absolute h-full z-[-1]" src={arrowdownbg} alt="bg" />
-              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[0px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center h-full min-h-[406px] whitespace-nowrap">WHAT WE ARE ALL ABOUT </span>
+              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[0px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center h-full min-h-[406px] whitespace-nowrap z-[-1]">WHAT WE ARE ALL ABOUT </span>
               <div className="absolute sm:left-[20%] left-[50%] lg:left-[100px] xl:left-[140px] lg:top-0 xl:top-[-30px] sm:bottom-[-186px] bottom-[-106px] transform -translate-x-1/2 sm:-translate-x-0">
                 <img className="rounded-[10px] xl:max-w-[433px] lg:max-w-[350px] sm:max-w-[333px] max-w-[261px]" src={cook} alt="" />
               </div>
@@ -96,6 +96,7 @@ const About = () => {
           </div>
         </section>
         <section className="md:px-[100px] px-[30px] mt-[131px]">
+        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px]">Meet the Team</h2>
           <Slide/>
         </section>
         <section className="md:px-[120px] spx-[30px] mt-[131px]">
