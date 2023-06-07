@@ -10,9 +10,9 @@ export default {
         serif: ["Lato", "serif"],
       },
       backgroundImage: {
-        'about-hero': "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('./src/assets/about/about_bg1.png')",
-        'about-2': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('./src/assets/about/about_bg2.png')",
-        'about-3': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('./src/assets/about/about_bg3.png')",
+        'about-hero': "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
+        'about-2': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg2_pjhkyz.png')",
+        'about-3': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg3_ni5yxp.png')",
         'arrowdownbg': "url('./src/assets/about/arrowdownbg.png')",
         'arrowdownsm': "url('./src/assets/about/arrowdownsm.png')"
       },
