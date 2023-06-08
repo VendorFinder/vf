@@ -3,6 +3,7 @@ import Data from "../components/Categories/Data"
 import DataSection from "../components/Categories/DataSection"
 import Footer from "../components/Footer/Footer"
 import NavBar from "../components/NavBar/NavBar"
+import RegisterModal from "../components/Register/RegisterModal"
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -41,6 +42,7 @@ const Categories = () => {
           <Data searchQuery={searchQuery}/>
           </div>}
         </section>
+        <RegisterModal/>
       </main>
       <Footer />
     </div>
