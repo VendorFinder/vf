@@ -1,11 +1,18 @@
-import Footer from "../components/Footer/Footer"
-import NavBar from "../components/NavBar/NavBar"
+import Embrace from "../components/Embrace/Embrace";
+import Footer from "../components/Footer/Footer";
+import Hero from "../components/Hero/Hero";
+import NavBar from "../components/NavBar/NavBar";
+import OurServices from "../components/OurServices/OurServices";
+import VendorReg from "../components/VendorReg/VendorReg";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-      <h2>hwlllo</h2>
+      <Hero />
+      <Embrace />
+      <OurServices />
+      <VendorReg/>
       <Footer />
     </div>
   );
