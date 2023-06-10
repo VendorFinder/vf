@@ -51,9 +51,7 @@
   flex-direction: row;
   gap:50px;
 }
-.slick-list{
-  padding-top: 100px;
-}
+
 @layer components {
   .btn {
     @apply py-2.5 px-6 rounded-[10px];

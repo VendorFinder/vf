@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Call, WhatsApp } from "@mui/icons-material";
+import { Call, WhatsApp, Mail } from "@mui/icons-material";
 
-import { createClient } from "@supabase/supabase-js";
-const supabase = createClient("https://qxcpqnkhmkujrodoagff.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF4Y3BxbmtobWt1anJvZG9hZ2ZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYxNjc3MzYsImV4cCI6MjAwMTc0MzczNn0.dJi1yNIosATsj9Ew5APzka7gaBzXpKbe3gRjQQeIxYs");
+import supabase from "../../config/supabaseConfig";
 
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
 import locationIcon from '../../assets/about/locationIcon.svg'
+import Spinner from "../Spinner/Spinner";
 
 
 export default function Data({cat, searchQuery}) {
@@ -17,6 +17,7 @@ export default function Data({cat, searchQuery}) {
   const [error, setError] = useState('')
   const [id, setId] = useState('')
   const [open, setOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onOpenModal = (id) => {
     setId(id)
@@ -26,7 +27,9 @@ export default function Data({cat, searchQuery}) {
 
   useEffect(() => {
    const getData = async() => {
-      let query = supabase.from('vendorsdata').select()
+      setIsLoading(true)
+      setData([])
+      let query = supabase.from('vendorsdata').select().eq('approve', true)
 
       if(cat){
         query = query.eq('category', cat)
@@ -35,12 +38,19 @@ export default function Data({cat, searchQuery}) {
         query = query.or(`fname.ilike.%${searchQuery}%,lname.ilike.%${searchQuery}%,biz_name.ilike.%${searchQuery}%,address.ilike.%${searchQuery}%,insta.ilike.%${searchQuery}%,city.ilike.%${searchQuery}%,state.ilike.%${searchQuery}%,category.ilike.%${searchQuery}%,bio.ilike.%${searchQuery}%`);
       }
       const {data, error} = await query
+      console.log(data);
       if(data){
         setData(data);
         setError('')
+        setIsLoading(false)
+      }
+      if(data.length === 0){
+
+        console.log('No vendor for this category or search')
       }
       if(error){
         setError(error)
+        setIsLoading(false)
       }
     }
     getData();
@@ -50,20 +60,23 @@ export default function Data({cat, searchQuery}) {
     const filteredData = data.filter(item => item.id === id);
     setProfile(filteredData)
   }, [id])
-console.log(profile);
   return (
     <div className="flex flex-wrap gap-[50px]">
-      {data && data.map(d => (
-        <div className="flex flex-col gap-[20px] items-start w-[30%] bg-[#DEF2F5] rounded-[10px] p-[15px]" key={d.id}>
-          <img className="rounded-[10px] h-[176px]" src={d.cover_photo} alt="" />
+      {!isLoading && data.length === 0 && <div className="flex justify-center items-center w-full">
+        <span className="font-playfair font-[700] text-[20px] text-primary">No vendor for this category or search</span>
+        </div>}
+      {isLoading && <Spinner h={80} w={80}/>}
+      {data && data.map((d, i) => (
+        <div className={`flex flex-col gap-[20px] items-start w-full md:w-[50%] lg:w-[30%] ${i%2 === 0 ? 'bg-[#DEF2F5]':'bg-[#F7ECE1]' } rounded-[10px] p-[15px]`} key={d.id}>
+          <img className="rounded-[10px] h-[176px] w-full" src={d.cover_photo} alt="" />
           <div>
-            <span className="font-playfair font-[700] text-[20px]">{d.biz_name}</span>
+            <span className="font-playfair font-[700] sm:text-[20px] text-[18px] text-secondary">{d.biz_name}</span>
             <div className='flex gap-[8px]'>
               <img src={locationIcon} alt="location" />
-              <span>{d.address}</span>
+              <span className="font-lato font-[400] sm:text-[16px] text-[14px] text-secondary">{d.city}, {d.state}</span>
             </div>
           </div>
-          <p>{d.bio.split(' ').slice(0, 10).join(' ')}...</p>
+          <p className="font-[400] font-lato text-body-text-2">{d.bio.split(' ').slice(0, 10).join(' ')}...</p>
           <button className="font-[600] font-lato text-[16px] text-[#0C4E8B] rounded-[10px] py-[10px] px-[20px] border border-[#0C4E8B] hover:bg-[#0C4E8B] hover:text-[#fff]" onClick={() => onOpenModal(d.id)}>
                   View Profile
           </button>
@@ -75,7 +88,7 @@ console.log(profile);
               <span className="font-playfair font-[700] text-[20px] text-primary">{profile[0].biz_name}</span>
               <div className='flex gap-[8px]'>
                 <img src={locationIcon} alt="location" />
-                <span>{profile[0].address}</span>
+                <span>{profile[0].city}, {profile[0].state}</span>
               </div>
             </div>
           <img className="min-h-[250px]" src={profile[0].cover_photo} alt="" />
@@ -83,6 +96,11 @@ console.log(profile);
             <p className="font-playfair font-[400] text-[15px] text-body-text-2">Owner: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].fname} {profile[0].lname}</span></p>
             <p className="font-playfair font-[400] text-[15px] text-body-text-2">Business name: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].biz_name}</span></p>
             <p className="font-playfair font-[400] text-[15px] text-body-text-2">Service offered: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].category}</span></p>
+            <p className="font-playfair font-[400] text-[15px] text-body-text-2">Address: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].address}</span></p>
+            <p className="font-playfair font-[400] text-[15px] text-body-text-2">City: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].city}</span></p>
+            <p className="font-playfair font-[400] text-[15px] text-body-text-2">State: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].state}</span></p>
+            <p className="font-playfair font-[400] text-[15px] text-body-text-2">Years of experience: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].experience}</span></p>
+            <p className="font-playfair font-[400] text-[15px] text-body-text-2">Event Coverage: <span className="font-lato font-[600] text-[18px] text-body-text-1">{profile[0].distance}</span></p>
           </div>
           <div>
             <span className="font-playfair font-[600] text-[18px] text-primary">Bio</span>
@@ -92,11 +110,11 @@ console.log(profile);
             <span className="font-playfair font-[600] text-[18px] text-primary">Business Hours</span>
             <div className="flex flex-col gap-[5px]">
               <span className="font-lato font-[500] text-[18px] text-body-text-1">Monday - Friday</span>
-              <span className="font-lato font-[400] text-[18px] text-body-text-2">{profile[0].biz_hour_wd}</span>
+              <span className="font-lato font-[400] text-[18px] text-body-text-2">{profile[0].openMF} - {profile[0].closeMF}</span>
             </div>
             <div className="flex flex-col gap-[5px]">
               <span className="font-lato font-[500] text-[18px] text-body-text-1">Saturday & Sunday</span>
-              <span className="font-lato font-[400] text-[18px] text-body-text-2">{profile[0].biz_hour_wk}</span>
+              <span className="font-lato font-[400] text-[18px] text-body-text-2">{profile[0].openSS} - {profile[0].closeSS}</span>
             </div>
           </div>
           <div className="flex flex-col gap-[10px]">
@@ -112,6 +130,10 @@ console.log(profile);
             <div className="flex gap-[5px]">
               <WhatsApp color="#555C69"/>
               <span className="font-lato font-[600] text-[18px] text-body-text-1">- {profile[0].whatsapp}</span>
+            </div>
+            <div className="flex gap-[5px]">
+              < Mail color="#555C69"/>
+              <span className="font-lato font-[600] text-[18px] text-body-text-1">- {profile[0].email}</span>
             </div>
           </div>
           </div>

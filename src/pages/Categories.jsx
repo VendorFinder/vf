@@ -7,11 +7,27 @@ import RegisterModal from "../components/Register/RegisterModal"
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [search, setSearch] = useState(false)
+  const [search, setSearch] = useState(false);
+  const [searchErr, setSearchErr] = useState(false);
+
+  const [regModal, setRegModal] = useState(false);
+
+  const onOpenModal = () => setRegModal(true)
+  const onCloseModal = () => setRegModal(false);
+  const handleChangeSearch = (e) => {
+    setSearchQuery(e.target.value)
+    setSearchErr(false)
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('submitted');
-    setSearch(true)
+    if(!searchQuery){
+      setSearchErr(true)
+    }
+    if(searchQuery){
+      setSearch(true)
+      setSearchErr(false)
+    }
   }
   return (
     <div>
@@ -22,16 +38,16 @@ const Categories = () => {
             <h1 className="font-[700] md:text-[40px] text-[35px] text-[#FFFFFF]">Seamless Event Planning Starts Here</h1>
           </div>
         </section>
-        <section className="my-[50px] flex flex-col gap-[50px] justify-center w-[60%] mx-auto text-center">
-            <span className="font-lato font-[400] text-[20px]">Find your ideal vendors for a spectacular event...</span>
+        <section className="my-[50px] flex flex-col gap-[50px] justify-center w-[90%] md:w-[60%] mx-auto text-center">
+            <span className="font-lato font-[400] sm:text-[20px] text-[18px]">Find your ideal vendors for a spectacular event...</span>
             <form onSubmit={handleSubmit} className="relative">
               <label>
-                <input type="text" placeholder="Search for vendor..."  className="py-[20px] px-[20px] rounded-[10px] border border-[0.5] border-[#2A2A2A] w-full" onChange={(e) => setSearchQuery(e.target.value)} value={searchQuery}/>
+                <input type="text" placeholder="Search for vendor..."  className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${searchErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} onChange={(e) => handleChangeSearch(e)} value={searchQuery}/>
               </label>
-              <button className="absolute right-[8px] top-[8px] bg-primary rounded-[10px] py-[13px] px-[30px] text-white hover:bg-opacity-70">Search</button>
+              <button className="absolute right-[8px] top-[5px] bg-primary rounded-[10px] py-[13px] px-[30px] text-white hover:bg-opacity-70">Search</button>
             </form>
         </section>
-        <section className="md:px-[100px] px-[30px] mt-[131px]">
+        <section className="md:px-[100px] px-[30px] md:mt-[131px]">
           {!search && <DataSection/>}
           {search && <div className="flex flex-col gap-[50px] ">
             <div className="flex justify-start">    
@@ -42,7 +58,12 @@ const Categories = () => {
           <Data searchQuery={searchQuery}/>
           </div>}
         </section>
-        <RegisterModal/>
+        <div className="flex justify-center items-center my-[50px]">
+          <button className="font-[600] font-lato text-[16px] text-[#0C4E8B] rounded-[10px] py-[10px] px-[20px] border border-[#0C4E8B] hover:bg-[#0C4E8B] hover:text-[#fff]" onClick={onOpenModal}>
+              Join Now
+          </button>
+        </div>
+        <RegisterModal open={regModal} onClose={onCloseModal}/>
       </main>
       <Footer />
     </div>
