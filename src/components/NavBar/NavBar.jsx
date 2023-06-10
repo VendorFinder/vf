@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="relative z-10 left-0 top-0 w-full">
+    <div className="fixed z-[100] left-0 top-0 w-full">
       <header className="shadow-md font-serif font-regular">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="cursor-pointer">
