@@ -1,9 +1,8 @@
 import ContactForm from "../components/ContactForm/ContactForm";
 import Embrace from "../components/Embrace/Embrace";
-
 import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
-import HowItWorks from "../components/HowItWorks/HowItWorks.JSX";
+import HowItWork from "../components/HowItWorks/HowItIWork";
 import NavBar from "../components/NavBar/NavBar";
 import OurServices from "../components/OurServices/OurServices";
 import Testimonials from "../components/Testimonials/Testimonials";
@@ -19,7 +18,7 @@ const Home = () => {
       <OurServices />
       <WhyUs />
       <Testimonials />
-      <HowItWorks />
+      <HowItWork />
       <ContactForm />
       <VendorReg />
       <Footer />
