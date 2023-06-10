@@ -4,7 +4,7 @@ import smile from "../../assets/smile.png";
 import smileguy from "../../assets/smileguy.png";
 import trxsuccess from "../../assets/trxsuccess.png";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
-const HowItWorks = () => {
+const HowItWork = () => {
   return (
     <section>
       <div className="flex flex-col-reverse md:flex-row w-full  p-4 md:p-20">
@@ -103,4 +103,4 @@ const HowItWorks = () => {
     </section>
   );
 };
-export default HowItWorks;
+export default HowItWork;
