@@ -3,18 +3,23 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily:{
-        'playfair': '"Playfair Display", serif',
-        'lato': "'Lato', sans-serif",
+      fontFamily: {
+        playfair: '"Playfair Display", serif',
+        lato: "'Lato', sans-serif",
         sans: ["Playfair Display", "sans-serif"],
         serif: ["Lato", "serif"],
       },
       backgroundImage: {
-        'about-hero': "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
-        'about-2': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg2_pjhkyz.png')",
-        'about-3': "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg3_ni5yxp.png')",
-        'arrowdownbg': "url('./src/assets/about/arrowdownbg.png')",
-        'arrowdownsm': "url('./src/assets/about/arrowdownsm.png')"
+        "about-hero":
+          "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
+        "about-2":
+          "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg2_pjhkyz.png')",
+        "about-3":
+          "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg3_ni5yxp.png')",
+        arrowdownbg: "url('./src/assets/about/arrowdownbg.png')",
+        arrowdownsm: "url('./src/assets/about/arrowdownsm.png')",
+        whyusbg:
+          "linear-gradient(rgba(222, 242, 245, 0.8s), rgba(222, 242, 245, 0.5)), url('./src/assets/whyusbg.png')",
       },
       colors: {
         primary: "#0C4E8B",
@@ -43,9 +48,9 @@ export default {
       fontWeight: {
         bold: "700",
         semiBold: "600",
-        regular:"400",
+        regular: "400",
       },
     },
     plugins: [],
   },
-}; 
+};

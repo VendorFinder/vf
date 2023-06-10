@@ -13,7 +13,7 @@ const Embrace = () => {
         <h3 className="text-body-2 mb-4">
           Eliminate the Hassle of Event Planning
         </h3>
-        <h2 className="text-heading-3 mb-5">
+        <h2 className="text-heading-3 font-semiBold mb-5">
           Embrace Seamless <br /> Celebrations!
         </h2>
         <p className="text-body-1 font-serif mb-8">
