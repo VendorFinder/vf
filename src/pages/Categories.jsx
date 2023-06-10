@@ -4,16 +4,14 @@ import DataSection from "../components/Categories/DataSection"
 import Footer from "../components/Footer/Footer"
 import NavBar from "../components/NavBar/NavBar"
 import RegisterModal from "../components/Register/RegisterModal"
+import VendorReg from "../components/VendorReg/VendorReg"
 
 const Categories = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [search, setSearch] = useState(false);
   const [searchErr, setSearchErr] = useState(false);
 
-  const [regModal, setRegModal] = useState(false);
 
-  const onOpenModal = () => setRegModal(true)
-  const onCloseModal = () => setRegModal(false);
   const handleChangeSearch = (e) => {
     setSearchQuery(e.target.value)
     setSearchErr(false)
@@ -32,7 +30,7 @@ const Categories = () => {
   return (
     <div>
       <NavBar />
-      <main className="max-w-[1400px] mx-auto mb-[78px]">
+      <main className="max-w-[1400px] mx-auto">
         <section className="flex justify-center h-[475px] items-center bg-secondary mb-[50px]">
           <div className="font-playfair w-[90%] mx-auto text-center">
             <h1 className="font-[700] md:text-[40px] text-[35px] text-[#FFFFFF]">Seamless Event Planning Starts Here</h1>
@@ -58,12 +56,9 @@ const Categories = () => {
           <Data searchQuery={searchQuery}/>
           </div>}
         </section>
-        <div className="flex justify-center items-center my-[50px]">
-          <button className="font-[600] font-lato text-[16px] text-[#0C4E8B] rounded-[10px] py-[10px] px-[20px] border border-[#0C4E8B] hover:bg-[#0C4E8B] hover:text-[#fff]" onClick={onOpenModal}>
-              Join Now
-          </button>
-        </div>
-        <RegisterModal open={regModal} onClose={onCloseModal}/>
+        <section className="md:mt-[150px] mt-[130px]">
+          <VendorReg/>
+        </section>
       </main>
       <Footer />
     </div>
