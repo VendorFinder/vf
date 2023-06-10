@@ -1,0 +1,20 @@
+.whyUsMain {
+  background: radial-gradient(
+      #04172a 0%,
+      rgba(4, 23, 42, 0.9),
+      rgba(4, 23, 42, 0.9)
+    ),
+    url("../../assets/whyusbg.png");
+  background-size: contain;
+  background-position: center;
+  height: 40rem;
+}
+
+@media (max-width: 498px) {
+  .whyUsMain {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+  }
+}
