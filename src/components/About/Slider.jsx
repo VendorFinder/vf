@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import next from '../../assets/about/next.png'
 import prev from '../../assets/about/prev.png'
+import team from '../../assets/about/team.png'
+
 
 const PreviousButton = ({ onClick }) => (
   <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute left-[-20px] z-[1] top-1/2 transform -translate-y-1/2">
@@ -43,17 +45,17 @@ export default function Slide() {
   
   return (
     <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto  ">
-      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
-        <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
+      <div className=" w-full h-[426px]">
+        <img src={team} alt="team" />
       </div>
-      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
-      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
+      <div className=" w-full h-[426px]">
+      <img src={team} alt="team" />
       </div>
-      <div className=" relative bg-[#DEF2F5] w-full h-[426px]">
-      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
+      <div className="  w-full h-[426px]">
+      <img src={team} alt="team" />
       </div>
-      <div className="relative bg-[#DEF2F5] w-full h-[426px]">
-      <div className="absolute h-[426px] w-full bottom-[-20px] top-[-20px] left-[20px] bg-[#DEF2F5]"></div>
+      <div className=" w-full h-[426px]">
+      <img src={team} alt="team" />
       </div>
     </Slider>
   );
