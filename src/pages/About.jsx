@@ -96,7 +96,7 @@ const About = () => {
           </div>
         </section>
         <section className="md:px-[100px] px-[30px] mt-[131px]">
-        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px]">Meet the Team</h2>
+        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[]">Meet the Team</h2>
           <Slide/>
         </section>
         <section className="md:px-[120px] spx-[30px] mt-[131px]">
@@ -105,7 +105,7 @@ const About = () => {
             <div className="mt-[66px] flex flex-col gap-[50px]">
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[10]" src={ngosa} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={ngosa} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -115,7 +115,7 @@ const About = () => {
               </div>
               <div className="flex  flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[10]" src={dani} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={dani} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -125,7 +125,7 @@ const About = () => {
               </div>
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[10]" src={weddings} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={weddings} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -135,7 +135,7 @@ const About = () => {
               </div>
               <div className="flex flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[10]" src={glass} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={glass} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
