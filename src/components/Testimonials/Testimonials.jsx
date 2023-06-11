@@ -3,7 +3,7 @@ import Cards from "../Cards/Cards";
 const Testimonials = () => {
   return (
     <div className="mb-8">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-16">
         <h5 className="font-serif text-body-2 font-regular">
           <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
           Testimonials

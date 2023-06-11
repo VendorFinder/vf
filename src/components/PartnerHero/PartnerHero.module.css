@@ -1,0 +1,31 @@
+.partnerHero {
+  background: radial-gradient(
+      circle,
+      rgba(4, 23, 42, 0.8),
+      rgba(4, 23, 42, 0.8)
+    ),
+    url("../../assets/partnerhero.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 35rem;
+  background-repeat: no-repeat;
+}
+
+.partner {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 498px) {
+  .partnerHero {
+    background: radial-gradient(
+        circle,
+        rgba(4, 23, 42, 0.8),
+        rgba(4, 23, 42, 0.8)
+      ),
+      url("../../assets/partnersm.png");
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    background-repeat: no-repeat;
+  }
+}
