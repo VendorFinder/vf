@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 
 function App() {
   return (
-    <>
+    <div className="pt-[100px]">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         {/* <Routes path="*" element={<NotFound />} /> */}
       </Routes>
-    </>
+    </div>
   );
 }
 
