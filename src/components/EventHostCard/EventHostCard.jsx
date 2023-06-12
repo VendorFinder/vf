@@ -5,8 +5,8 @@ const EventHostCard = ({ imageSrc, title, text }) => {
   return (
     <div className="max-w-sm h-[23rem] rounded  shadow-lg border-2 border-[#04172A]">
       <div className="">
-        <div className="relative top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex justify-center">
-          <img className="w-20 rounded-full " src={imageSrc} alt="Card" />
+        <div className="relative top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/2 w-full flex justify-center">
+          <img className="w-20 rounded-full my-2" src={imageSrc} alt="Card" />
         </div>
       </div>
       <div className="px-6 flex flex-col items-center">

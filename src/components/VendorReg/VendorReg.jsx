@@ -1,11 +1,7 @@
-import { useState } from "react";
-import RegisterModal from "../Register/RegisterModal";
 import styles from "./VendorReg.module.css";
-const VendorReg = () => {
-  const [regModal, setRegModal] = useState(false);
+import { Link } from "react-router-dom";
 
-  const onOpenModal = () => setRegModal(true)
-  const onCloseModal = () => setRegModal(false);
+const VendorReg = () => {
   return (
     <div className={styles.vendorMain}>
       <div className="flex items-center  p-10 md:p-24">
@@ -17,12 +13,13 @@ const VendorReg = () => {
             Whatever service you provide, VendorFinder <br /> is here to assist
             you in expanding your <br /> business.
           </p>
-          <button className="btn btn-Primary font-serif mb-0 md:mb-4" onClick={onOpenModal}>
-            Join Now
-          </button>
+          <Link to="/partner">
+            <button className="btn btn-Primary font-serif mb-0 md:mb-4">
+              Join Now
+            </button>
+          </Link>
         </div>
       </div>
-      <RegisterModal open={regModal} onClose={onCloseModal}/>
     </div>
   );
 };
