@@ -1,4 +1,10 @@
+import { useState } from "react";
+import RegisterModal from "../Register/RegisterModal";
 const PartnerProcess = () => {
+  const [regModal, setRegModal] = useState(false);
+
+  const onOpenModal = () => setRegModal(true);
+  const onCloseModal = () => setRegModal(false);
   return (
     <main>
       <section className="mb-12">
@@ -60,11 +66,12 @@ const PartnerProcess = () => {
           <h2>
             Are you ready to join our community of talented event vendors today?
           </h2>
-          <button className="btn btn-Primary font-lato">
+          <button className="btn btn-Primary font-lato" onClick={onOpenModal}>
             Click here to Register
           </button>
         </div>
       </div>
+      <RegisterModal open={regModal} onClose={onCloseModal} />
     </main>
   );
 };

@@ -1,4 +1,5 @@
 import embrace from "../../assets/embracee.png";
+import { Link } from "react-router-dom";
 const Embrace = () => {
   return (
     <section className="w-full flex-col-reverse md:flex-row flex">
@@ -22,9 +23,11 @@ const Embrace = () => {
           client finds the <br /> perfect match for their specific event
           requirements.
         </p>
-        <button className="btn btn-Primary mb-0 md:mb-3 font-serif">
-          Read more
-        </button>
+        <Link to="/about">
+          <button className="btn btn-Primary mb-0 md:mb-3 font-serif">
+            Read more
+          </button>
+        </Link>
       </div>
     </section>
   );
