@@ -6,7 +6,7 @@ import trxsuccess from "../../assets/trxsuccess.png";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
 const HowItWork = () => {
   return (
-    <section>
+    <section className="mb-6">
       <div className="flex flex-col-reverse md:flex-row w-full  p-4 md:p-20">
         <div className="pl-[2.5rem] mt-8 relative w-full">
           <img src={Howitworks} alt="" />

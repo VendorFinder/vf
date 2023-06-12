@@ -24,11 +24,11 @@ const Testimonials = () => {
         <div className="w-12 h-2 bg-[#0C4E8B] mb-4"></div>
       </div>
 
-      <p className="px-5 md:text-center">
+      <p className="px-5 md:text-center mb-20">
         More than 100 hosts chose to connect with event vendors <br /> through
         VendorFinder
       </p>
-      <Cards />
+      <Cards className="z-20" />
     </div>
   );
 };
