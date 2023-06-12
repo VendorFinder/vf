@@ -13,16 +13,16 @@ const Footer = () => {
           <h2 className="font-bold  text-subHeading-2">Company</h2>
           <ul className="space-y-4 font-regular">
             <li>
-              <Link>FAQ</Link>
+              <Link to="/about">FAQ</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link>Services</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <Link>Categories</Link>
+              <Link to="/categories">Categories</Link>
             </li>
           </ul>
         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
           <h2 className="font-bold text-subHeading-2">Contact Us</h2>
           <ul className="space-y-4 font-regular">
             <li>+2349065531000</li>
-            <li>vendorfinder@gmail.com</li>
+            <li>vendorfinder18@gmail.com</li>
             <li>
               <ul className="flex space-x-4 md:items-center md:justify-between">
                 <li>

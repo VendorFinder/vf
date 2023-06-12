@@ -4,6 +4,7 @@ import smile from "../../assets/smile.png";
 import smileguy from "../../assets/smileguy.png";
 import trxsuccess from "../../assets/trxsuccess.png";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import { Link } from "react-router-dom";
 const HowItWork = () => {
   return (
     <section className="mb-6">
@@ -93,10 +94,11 @@ const HowItWork = () => {
                 <img src={trxsuccess} alt="" />
               </div>
             </div>
-
-            <button className="btn btn-Primary mt-10 md:mt-16">
-              Get Started
-            </button>
+            <Link to="/categories">
+              <button className="btn btn-Primary mt-10 md:mt-16">
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </div>

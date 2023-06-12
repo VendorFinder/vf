@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -8,7 +9,9 @@ const Hero = () => {
       </h1>
 
       <div className=" md:flex md:justify-center md:items-center px-24 md:px-0 ">
-        <button className="btn btn-Primary font-serif">Hire a Vendor</button>
+        <Link to="/categories">
+          <button className="btn btn-Primary font-serif">Hire a Vendor</button>
+        </Link>
       </div>
     </div>
   );
