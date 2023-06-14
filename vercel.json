@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/about", "destination": "/index.html" },
+    { "source": "/partner", "destination": "/index.html" },
+    { "source": "/categories", "destination": "/index.html" },
+    { "source": "/services", "destination": "/index.html" }
+  ]
+}
