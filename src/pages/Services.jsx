@@ -12,10 +12,6 @@ import decorationservice from '../assets/decorationservice.png'
 import eventservice from '../assets/eventservice.png'
 
 
-
-
-
-
 const Services = () => {
   return (
     <div>
