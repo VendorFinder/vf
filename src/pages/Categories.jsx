@@ -53,6 +53,9 @@ const Categories = () => {
                     Back
             </button>
             </div>
+            <div className="flex justify-center items-center w-full">
+            <span className="font-playfair font-[700] text-[20px] text-primary">Showing results for {searchQuery}</span>
+            </div>
           <Data searchQuery={searchQuery}/>
           </div>}
         </section>

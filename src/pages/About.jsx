@@ -89,14 +89,14 @@ const About = () => {
                   <span className="font-[400] text-[16px] max-w-[85px]">Client satisfaction</span>
                 </div>
               </div>
-              <Link className="font-[600] font-lato text-[16px] text-[#0C4E8B] rounded-[10px] py-[10px] px-[20px] border border-[#0C4E8B] hover:bg-[#0C4E8B] hover:text-[#fff]" to='/'>
+              <Link className="font-[600] font-lato text-[16px] text-[#0C4E8B] rounded-[10px] py-[10px] px-[20px] border border-[#0C4E8B] hover:bg-[#0C4E8B] hover:text-[#fff]" to='/categories'>
                   View Vendors
               </Link>
             </div>
           </div>
         </section>
         <section className="md:px-[100px] px-[30px] mt-[131px]">
-        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[]">Meet the Team</h2>
+        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[50px]">Meet the Team</h2>
           <Slide/>
         </section>
         <section className="md:px-[120px] spx-[30px] mt-[131px]">
