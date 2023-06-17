@@ -185,15 +185,15 @@ export default function RegisterModal({open, onClose}) {
     if(!distance && step === 2){
       setDistanceErr(true)
     }
-    setStep(3)
-    // if(step === 2 && bizName && address && coverPhoto && city && state && distance){
-    //   setBizNameErr(false)
-    //   setCoverPhotoErr(false)
-    //   setAddressErr(false)
-    //   setCityErr(false)
-    //   setStateErr(false)
-    //   setDistanceErr(false)
-    // }
+    if(step === 2 && bizName && address && coverPhoto && city && state && distance){
+      setStep(3)
+      setBizNameErr(false)
+      setCoverPhotoErr(false)
+      setAddressErr(false)
+      setCityErr(false)
+      setStateErr(false)
+      setDistanceErr(false)
+    }
   }
 
   const handleSubmit = async (e) => {
