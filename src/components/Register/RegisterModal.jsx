@@ -185,15 +185,15 @@ export default function RegisterModal({open, onClose}) {
     if(!distance && step === 2){
       setDistanceErr(true)
     }
-    if(step === 2 && bizName && address && coverPhoto && city && state && distance){
-      setStep(3)
-      setBizNameErr(false)
-      setCoverPhotoErr(false)
-      setAddressErr(false)
-      setCityErr(false)
-      setStateErr(false)
-      setDistanceErr(false)
-    }
+    setStep(3)
+    // if(step === 2 && bizName && address && coverPhoto && city && state && distance){
+    //   setBizNameErr(false)
+    //   setCoverPhotoErr(false)
+    //   setAddressErr(false)
+    //   setCityErr(false)
+    //   setStateErr(false)
+    //   setDistanceErr(false)
+    // }
   }
 
   const handleSubmit = async (e) => {
@@ -316,20 +316,20 @@ export default function RegisterModal({open, onClose}) {
         <form className='mt-[26px] mb-[50px] min-h-[574px]' onSubmit={handleSubmit}>
           {step === 1 &&<div className='flex flex-col gap-[10px]'>
           <h1 className='font-playfair font-[700] text-[18px] text-secondary'>Personal Information </h1>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Name</span>
             <div className='flex flex-col md:flex-row md:gap-[6%] gap-[10px]'>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${ferr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='First name' onChange={(e) => handleChangeFname(e)} value={fname}/>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${lerr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='Last name'onChange={(e) => handleChangeLname(e)} value={lname}/>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Email</span>
             <div className=''>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${emailErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Enter your email address' onChange={(e) => handleChangeEmail(e)} value={email}/>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Phone number</span>
             <div className=''>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${phoneErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Enter your phone number' onChange={(e) => handleChangePhone(e)} value={phone}/>
@@ -338,13 +338,13 @@ export default function RegisterModal({open, onClose}) {
           </div>}
           {step === 2 &&<div className='flex flex-col gap-[10px]'>
           <h1 className='font-playfair font-[700] text-[18px] text-secondary'>Business Information </h1>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Business Name</span>
             <div className=''>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${bizNameErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Enter your business name' onChange={(e) => handleChangeBizName(e)} value={bizName}/>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Business location</span>
             <div className='flex flex-col gap-[10px]'>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${addressErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Address ' onChange={(e) => handleChangeAddress(e)} value={address}/>
@@ -398,14 +398,14 @@ export default function RegisterModal({open, onClose}) {
               </label>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Business Photo</span>
             <div className='relative'>
               <input type="file" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${coverPhotoErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='' onChange={(e) => handleFileChange(e)} />
               {coverPhoto && <button disabled className="absolute right-[8px] top-[8px] bg-primary rounded-[10px] py-[13px] px-[30px] text-white hover:bg-opacity-70">Uploaded</button>}
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Event Coverage</span>
             <div className=''>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${distanceErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Within Lagos etc' onChange={(e) => handleChangeDistance(e)} value={distance}/>
@@ -414,7 +414,7 @@ export default function RegisterModal({open, onClose}) {
           </div>}
           {step === 3 && <div className='flex flex-col gap-[10px]'>
           <h1 className='font-playfair font-[700] text-[18px] text-secondary'>Service Details </h1>
-          <label className='flex flex-col gap-[10px] relative'>
+          <label className='flex flex-col gap-[10px] font-lato relative'>
             <span>Service category</span>
               <select type="text" className={`cursor-pointer py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${categoryErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Select category' onChange={(e) => handleChangeCategory(e)} value={category}>
                     <option>Select category</option>
@@ -430,37 +430,37 @@ export default function RegisterModal({open, onClose}) {
                   </svg>
               </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Brief description</span>
               <textarea type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${bioErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Briefly describe the type of service you provide' onChange={(e) => handleChangeBio(e)} value={bio}/>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Buisness hour(Mon-Fri)</span>
             <div className='flex flex-col md:flex-row md:gap-[6%] gap-[10px]'>
               <div className='flex flex-col gap-[5px] w-full'>
                 <span>Opening</span>
-              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${openMFErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='First name' onChange={(e) => handleChangeOpenMF(e)} value={openMF}/>
+              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${openMFErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='First name' onChange={(e) => handleChangeOpenMF(e)} value={openMF}/>
               </div>
               <div className='flex flex-col gap-[5px] w-full'>
                 <span>Closing</span>
-              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${closeMFErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='Last name'onChange={(e) => handleChangeCloseMF(e)} value={closeMF}/>
+              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${closeMFErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Last name'onChange={(e) => handleChangeCloseMF(e)} value={closeMF}/>
               </div>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Buisness hour(Sat & Sun)</span>
             <div className='flex flex-col md:flex-row md:gap-[6%] gap-[10px]'>
               <div className='flex flex-col gap-[5px] w-full'>
                 <span>Opening</span>
-              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${openSSErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='First name' onChange={(e) => handleChangeOpenSS(e)} value={openSS}/>
+              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${openSSErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='First name' onChange={(e) => handleChangeOpenSS(e)} value={openSS}/>
               </div>
               <div className='flex flex-col gap-[5px] w-full'>
                 <span>Closing</span>
-              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${closeSSErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} md:w-[47%] w-full`} placeholder='Last name'onChange={(e) => handleChangeCloseSS(e)} value={closeSS}/>
+              <input type="time" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${closeSSErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Last name'onChange={(e) => handleChangeCloseSS(e)} value={closeSS}/>
               </div>
             </div>
           </label>
-          <label className='flex flex-col gap-[10px] relative'>
+          <label className='flex flex-col gap-[10px] font-lato relative'>
             <span>Years of Experience</span>
               <select type="text" className={`cursor-pointer py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${experienceErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Select' onChange={(e) => handleChangeExperience(e)}>
                     <option>Select </option>
@@ -476,7 +476,7 @@ export default function RegisterModal({open, onClose}) {
                   </svg>
               </div>
           </label>
-          <label className='flex flex-col gap-[10px]'>
+          <label className='flex flex-col gap-[10px] font-lato'>
             <span>Social media profiles(optional)</span>
             <div className='flex flex-col gap-[10px]'>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${instaErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Instagram' onChange={(e) => handleChangeInsta(e)} value={insta}/>
