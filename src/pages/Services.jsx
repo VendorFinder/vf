@@ -10,6 +10,7 @@ import entertaimentservice from '../assets/entertaimentservice.png'
 import photographyservice from '../assets/photographyservice.png'
 import decorationservice from '../assets/decorationservice.png'
 import eventservice from '../assets/eventservice.png'
+import { Link } from "react-router-dom";
 
 
 const Services = () => {
@@ -32,11 +33,12 @@ const Services = () => {
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Catering</h2>
             <p className="font-lato font-[400] sm:text-[18px] text-[16px] text-body-text-2">We have various experienced event caterers ready to offer their services at your beck and call! Avoid the stress of finding the best caterer to fit your needs, we are here to help.</p>
+            <Link to='/categories' className="text-primary font-lato font-[500]">View vendor</Link>
           </div>
         </section>
         <section className="relative md:min-h-[1360px] bg-contain mb-[65px] flex items-center">
         <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src={snakebg} alt="bg" />
-        <img className="absolute h-full z-[-1] w-full md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star} alt="bg" />
+        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star} alt="bg" />
         <div className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row-reverse items-center w-full md:gap-[6%] gap-[120px]">
           <div className="md:w-[47%] w-full">
             <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={entertaimentservice} alt="entertaimentservice" />
@@ -44,6 +46,8 @@ const Services = () => {
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Entertainment</h2>
             <p className="font-lato font-[400] sm:text-[18px] text-[16px] text-body-text-2">Entertainment is the soul of every event. What’s an event without a little or an abundance of entertainment? Come let us add some spice and make your events soulful.</p>
+            <Link to='/categories' className="text-primary font-lato font-[500]">View vendor</Link>
+
           </div>
         </div>
         </section>
@@ -54,11 +58,13 @@ const Services = () => {
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Photography</h2>
             <p className="font-lato font-[400] sm:text-[18px] text-[16px] text-body-text-2">Pictures are physical memories. They are a part of us. They capture the moment and tell a story. Every event needs pictures to capture every moment be it small or big. We have just the right photographers.</p>
+            <Link to='/categories' className="text-primary font-lato font-[500]">View vendor</Link>
+
           </div>
         </section>
         <section className="relative md:min-h-[1360px] bg-contain mb-[65px] flex items-center">
         <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src={snakebg2} alt="bg" />
-        <img className="absolute h-full z-[-1] w-full md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star2} alt="bg" />
+        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star2} alt="bg" />
         <div className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row-reverse items-center w-full md:gap-[6%] gap-[120px]">
           <div className="md:w-[47%] w-full">
             <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={decorationservice} alt="decorationservice" />
@@ -66,6 +72,8 @@ const Services = () => {
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Decoration</h2>
             <p className="font-lato font-[400] sm:text-[18px] text-[16px] text-body-text-2">We have decorators that can give your event a very unique look. You can also tailor the decorations to fit your needs and desires. You do the description, we do the action.</p>
+            <Link to='/categories' className="text-primary font-lato font-[500]">View vendor</Link>
+
           </div>
         </div>
         </section>
@@ -76,6 +84,7 @@ const Services = () => {
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Event venues</h2>
             <p className="font-lato font-[400] sm:text-[18px] text-[16px] text-body-text-2">Most times getting a venue for an event takes time, energy and resources. We make your events easier for you by relieving you of the stress of searching for a venue.</p>
+            <Link to='/categories' className="text-primary font-lato font-[500]">View vendor</Link>
           </div>
         </section>
       </main>
