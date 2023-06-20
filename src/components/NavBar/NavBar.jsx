@@ -1,18 +1,24 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      fontWeight: isActive ? "bold" : "normal",
+      fontSize: isActive ? "1.1rem" : "1rem",
+    };
+  };
   return (
     <div className="sticky z-10 left-0 top-0 w-full">
       <header className="shadow-md font-serif font-regular">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="cursor-pointer">
-            <Link to="/" className="h-16">
+            <NavLink to="/" className="h-16">
               <img src={logo} alt="vendorFinder-logo" />
-            </Link>
+            </NavLink>
           </div>
           <div
             onClick={() => setOpen(!open)}
@@ -30,19 +36,29 @@ const NavBar = () => {
               }`}
             >
               <li className="md:ml-8 text-white  md:text-body-text-2 hover:text-gray-400 duration-500 md:my-0 my-7">
-                <Link to="/">Home</Link>
+                <NavLink to="/" style={navLinkStyles}>
+                  Home
+                </NavLink>
               </li>
               <li className="md:ml-8 text-white md:text-body-text-2 hover:text-gray-400 duration-500 md:my-0 my-7">
-                <Link to="/about">About Us</Link>
+                <NavLink to="/about" style={navLinkStyles}>
+                  About Us
+                </NavLink>
               </li>
               <li className="md:ml-8 text-white md:text-body-text-2 hover:text-gray-400 duration-500 md:my-0 my-7">
-                <Link to="/services">Services</Link>
+                <NavLink to="/services" style={navLinkStyles}>
+                  Services
+                </NavLink>
               </li>
               <li className="md:ml-8 text-white md:text-body-text-2 hover:text-gray-400 duration-500 md:my-0 my-7">
-                <Link to="/categories">Categories</Link>
+                <NavLink to="/categories" style={navLinkStyles}>
+                  Categories
+                </NavLink>
               </li>
               <li className="md:ml-8 text-white md:text-body-text-2 hover:text-gray-400 duration-500 md:my-0 my-7">
-                <Link to="/partner">Partner with us</Link>
+                <NavLink to="/partner" style={navLinkStyles}>
+                  Partner with us
+                </NavLink>
               </li>
             </ul>
           </nav>

@@ -32,14 +32,14 @@ const HowItWork = () => {
           </h5>
           <div className="md:flex">
             <h2 className=" md:w-auto md:text-subHeading-1 font-playfair font-bold">
-              Easy Steps To Use This <br className="md:break-normal" /> Service
+              Easy Steps To Use This <br className="hidden md:inline" /> Service
             </h2>
             <div className="mx-24 relative top-[48rem] left-52 md:static">
               <img src={smileguy} className="w-12 md:w-16" alt="" />
             </div>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-2">
             <div className=" relative">
               <div className="flex  font-lato">
                 <div className=" border-2 border-[#0C4E8B] rounded-[50%] w-10 h-10 flex items-center justify-center">
@@ -74,7 +74,7 @@ const HowItWork = () => {
               </p>
               <div className="border-dashed border-l-2  border-[#0C4E8B] w-0 h-[9.5rem] md:h-[6.5rem] mx-[0.9rem] absolute left-[6px] top-10"></div>
             </div>
-            <div className="mt-8 relative">
+            <div className="md:mt-8 mt-2 relative">
               <div className="flex font-lato">
                 <div className=" border-2 border-[#0C4E8B] rounded-[50%] w-10 h-10 flex items-center justify-center">
                   3

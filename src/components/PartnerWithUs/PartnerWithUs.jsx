@@ -11,7 +11,7 @@ const PartnerWithUs = () => {
           Why Choose Us
         </h1>
         <p className="font-lato text-body-1 text-center">
-          Join our dynamic events management platform and showcase your services{" "}
+          Join our dynamic events management platform and showcase your services
           <br />
           to a vast audience of potential clients.
         </p>

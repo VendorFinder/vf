@@ -67,7 +67,7 @@ const WhyUs = () => {
           <div>
             <div className=" w-[20rem] mx-auto mt-8 border-[1px] border-[#EFEFEF] h-0 md:w-[27rem] md:mx-0"></div>
             <div className="border-2 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-4 mt-8">
-              <ElectricBoltOutlinedIcon style={{ color: "#EFBC88" }} />
+              <HeadsetMicOutlinedIcon style={{ color: "#EFBC88" }} />
             </div>
             <h2 className="text-center mb-4">Convenience and Efficiency</h2>
             <p className="px-8 mb-4">
