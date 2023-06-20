@@ -12,7 +12,7 @@ import prev from "../../assets/leftarrow.png";
 const PreviousButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="bg-white h-[40px] w-[40px] flex justify-center items-center  border-solid border-2 border-[#0C4E8B]  rounded-[50%] absolute left-[25px] md:left-[45px] z-[1] top-[220px] md:top-[280px] transform -translate-y-1/2"
+    className="bg-white h-[40px] w-[40px] flex justify-center items-center border-solid border-2 border-[#0C4E8B] rounded-[50%] absolute left-0 md:left-[45px] z-[1] top-[220px] md:top-[280px] transform -translate-y-1/2"
   >
     <img src={prev} alt="prev" />
   </button>
@@ -21,11 +21,12 @@ const PreviousButton = ({ onClick }) => (
 const NextButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[3px] md:right-[45px] top-[220px] md:top-[280px] transform -translate-y-1/2"
+    className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-0 md:right-[45px] top-[220px] md:top-[280px] transform -translate-y-1/2"
   >
     <img src={next} alt="next" />
   </button>
 );
+
 
 const Cards = () => {
   const settings = {
