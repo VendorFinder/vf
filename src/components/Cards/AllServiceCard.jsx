@@ -6,26 +6,26 @@ import Photography from "../../assets/photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
-// import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
+import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
+import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 
-// const PreviousButton = ({ onClick }) => (
-//   <button
-//     onClick={onClick}
-//     className="absolute right-0 md:right-[150px] top-[490px] md:top-[520px] transform -translate-y-1/2 md:translate-y-0"
-//   >
-//     <WestOutlinedIcon style={{ color: "#B1B1B1", fontSize: "30px" }} />
-//   </button>
-// );
+const PreviousButton = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-[70px] md:right-[150px] top-[490px] md:top-[428px] transform -translate-y-1/2 md:translate-y-0"
+  >
+    <WestOutlinedIcon style={{ color: "#B1B1B1", fontSize: "30px" }} />
+  </button>
+);
 
-// const NextButton = ({ onClick }) => (
-//   <button
-//     onClick={onClick}
-//     className="absolute right-0 md:right-[100px] top-[490px] md:top-[520px] transform -translate-y-1/2 md:translate-y-0"
-//   >
-//     <EastOutlinedIcon style={{ color: "#0C4E8B", fontSize: "45px" }} />
-//   </button>
-// );
+const NextButton = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="absolute right-[20px] md:right-[100px] top-[490px] md:top-[420px] transform -translate-y-1/2 md:translate-y-0"
+  >
+    <EastOutlinedIcon style={{ color: "#0C4E8B", fontSize: "45px" }} />
+  </button>
+);
 
 const AllServiceCard = () => {
   const settings = {
@@ -34,8 +34,8 @@ const AllServiceCard = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // prevArrow: <PreviousButton />,
-    // nextArrow: <NextButton />,
+    prevArrow: <PreviousButton />,
+    nextArrow: <NextButton />,
     responsive: [
       {
         breakpoint: 1024,
@@ -54,7 +54,7 @@ const AllServiceCard = () => {
 
   return (
     <div>
-      <Slider {...settings} className="py-8 md:py-2">
+      <Slider {...settings} className="py-8 md:py-2 overflow:hidden">
         <ServiceCard
           img={Decoration}
           title="Decoration"

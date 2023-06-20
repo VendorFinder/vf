@@ -6,26 +6,26 @@ import EventHostCard from "../EventHostCard/EventHostCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import next from "../../assets/rightarrow.png";
-// import prev from "../../assets/leftarrow.png";
+import next from "../../assets/rightarrow.png";
+import prev from "../../assets/leftarrow.png";
 
-// const PreviousButton = ({ onClick }) => (
-//   <button
-//     onClick={onClick}
-//     className="bg-white h-[40px] w-[40px] flex justify-center items-center border-solid border-2 border-[#0C4E8B] rounded-[50%] absolute left-[30px] md:left-[45px] top-[220px] md:top-[280px] transform -translate-y-1/2 md:translate-y-0"
-//   >
-//     <img src={prev} alt="prev" />
-//   </button>
-// );
+const PreviousButton = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="bg-white h-[40px] w-[40px] flex justify-center items-center border-solid border-2 border-[#0C4E8B] rounded-[50%] absolute left-[55px] md:left-[45px] top-[220px] md:top-[280px] transform -translate-y-2/2 md:translate-y-0"
+  >
+    <img src={prev} alt="prev" />
+  </button>
+);
 
-// const NextButton = ({ onClick }) => (
-//   <button
-//     onClick={onClick}
-//     className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[10px] md:right-[45px] top-[220px] md:top-[280px] transform -translate-y-1/2 md:translate-y-0"
-//   >
-//     <img src={next} alt="next" />
-//   </button>
-// );
+const NextButton = ({ onClick }) => (
+  <button
+    onClick={onClick}
+    className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[22px] md:right-[45px] top-[220px] md:top-[280px] transform -translate-y-2/2 md:translate-y-0"
+  >
+    <img src={next} alt="next" />
+  </button>
+);
 
 const Cards = () => {
   const settings = {
@@ -34,8 +34,8 @@ const Cards = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // prevArrow: <PreviousButton />,
-    // nextArrow: <NextButton />,
+    prevArrow: <PreviousButton />,
+    nextArrow: <NextButton />,
     responsive: [
       {
         breakpoint: 1024,
