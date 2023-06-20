@@ -12,7 +12,7 @@ import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 const PreviousButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="  absolute right-[70px] md:right-[150px] top-[490px] md:top-[520px] transform -translate-y-1/2"
+    className="absolute right-0 md:right-[150px] top-[490px] md:top-[520px] transform -translate-y-1/2 md:translate-y-0"
   >
     <WestOutlinedIcon style={{ color: "#B1B1B1", fontSize: "30px" }} />
   </button>
@@ -21,7 +21,7 @@ const PreviousButton = ({ onClick }) => (
 const NextButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="  absolute right-[20px] md:right-[100px] top-[490px] md:top-[520px] transform -translate-y-1/2"
+    className="absolute right-0 md:right-[100px] top-[490px] md:top-[520px] transform -translate-y-1/2 md:translate-y-0"
   >
     <EastOutlinedIcon style={{ color: "#0C4E8B", fontSize: "45px" }} />
   </button>
