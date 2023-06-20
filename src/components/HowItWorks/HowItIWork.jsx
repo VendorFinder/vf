@@ -11,10 +11,10 @@ const HowItWork = () => {
       <div className="flex flex-col-reverse md:flex-row w-full  p-4 md:p-20">
         <div className="pl-[2.5rem] mt-8 relative w-full">
           <img src={Howitworks} alt="" />
-          <div className="absolute left-[-60px] bottom-16">
+          <div className="absolute hidden md:block left-[-60px] bottom-16">
             <img src={pattern} className="w-20" alt="" />
           </div>
-          <div className="hidden md:absolute md:left-[32.5rem]  md:top-40">
+          <div className="hidden md:block md:absolute md:left-[32.5rem]  md:top-40">
             <img src={smile} alt="" />
           </div>
         </div>
@@ -34,7 +34,7 @@ const HowItWork = () => {
             <h2 className=" md:w-auto md:text-subHeading-1 font-playfair font-bold">
               Easy Steps To Use This <br className="hidden md:inline" /> Service
             </h2>
-            <div className="mx-24 relative top-[48rem] left-52 md:static">
+            <div className="mx-24 relative hidden md:block top-[48rem] left-52 md:static">
               <img src={smileguy} className="w-12 md:w-16" alt="" />
             </div>
           </div>

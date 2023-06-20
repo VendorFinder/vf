@@ -4,8 +4,8 @@ import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 import HowItWork from "../components/HowItWorks/HowItIWork";
 import NavBar from "../components/NavBar/NavBar";
-// import OurServices from "../components/OurServices/OurServices";
-// import Testimonials from "../components/Testimonials/Testimonials";
+import OurServices from "../components/OurServices/OurServices";
+import Testimonials from "../components/Testimonials/Testimonials";
 import VendorReg from "../components/VendorReg/VendorReg";
 import WhyUs from "../components/WhyUs/WhyUs";
 
@@ -15,9 +15,9 @@ const Home = () => {
       <NavBar />
       <Hero />
       <Embrace />
-      {/* <OurServices /> */}
+      <OurServices />
       <WhyUs />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <HowItWork />
       <ContactForm />
       <VendorReg />
