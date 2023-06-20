@@ -6,7 +6,7 @@ const Embrace = () => {
       <div className="w-full flex items-center justify-center">
         <img
           src={embrace}
-          className="md:w-fit md:h-fit  py-4 md:py-12 px-10 md:px-20 "
+          className="w-96 md:w-fit h-72 md:h-fit  py-4 md:py-12 px-10 md:px-20 "
           alt="embrace"
         />
       </div>
