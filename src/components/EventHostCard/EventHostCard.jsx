@@ -1,5 +1,5 @@
 import React from "react";
-import { ImQuotesLeft } from "react-icons/Im";
+import quotationMark from "../../assets/quotationMark.png";
 
 const EventHostCard = ({ imageSrc, title, text }) => {
   return (
@@ -11,7 +11,7 @@ const EventHostCard = ({ imageSrc, title, text }) => {
         <div className="px-6 flex flex-col items-center">
           <div className="font-bold text-xl mb-6 text-center">{title}</div>
           <div className="flex items-center justify-center mb-6">
-            <ImQuotesLeft style={{ fontSize: "35px", color: "#A0E9F4" }} />
+            <img src={quotationMark} className="w-7" alt="" />
           </div>
           <p className="text-gray-700 text-base mb-6">{text}</p>
         </div>
