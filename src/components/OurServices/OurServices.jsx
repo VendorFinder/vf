@@ -18,8 +18,9 @@ const OurServices = () => {
               }}
             />
           </h5>
-          <h2 className="text-heading-5">
-            Your One-Stop Solution For <br /> A Hassle-Free Event
+          <h2 className="text-heading-4 md:text-heading-3 font-semiBold">
+            Your One-Stop Solution For <br className="hidden md:inline" /> A
+            Hassle-Free Event
           </h2>
         </div>
         <div className="w-full px-4 md:px-6">
@@ -27,7 +28,10 @@ const OurServices = () => {
             Our curated collection of vendors ensures that you'll find the
             perfect match to make your event truly unforgettable.
           </p>
-          <Link to="/services" className="text-body-2">
+          <Link
+            to="/services"
+            className="text-body-2 text-blue-900 font-semibold"
+          >
             View All Services
           </Link>
         </div>
