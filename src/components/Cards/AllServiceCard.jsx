@@ -12,7 +12,7 @@ import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 const PreviousButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-[70px] md:right-[150px] top-[290px] md:top-[428px] transform -translate-y-1/2 md:translate-y-0"
+    className="absolute right-[70px] md:right-[150px] top-[490px] md:top-[428px] transform -translate-y-1/2 md:translate-y-0"
   >
     <WestOutlinedIcon style={{ color: "#B1B1B1", fontSize: "30px" }} />
   </button>
