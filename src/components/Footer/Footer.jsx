@@ -13,16 +13,16 @@ const Footer = () => {
           <h2 className="font-bold  text-subHeading-2">Company</h2>
           <ul className="space-y-4 font-regular">
             <li>
-              <Link to="/about">FAQ</Link>
+              <Link reloadDocument to="/about">FAQ</Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link reloadDocument to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link reloadDocument to="/services">Services</Link>
             </li>
             <li>
-              <Link to="/categories">Categories</Link>
+              <Link reloadDocument to="/categories">Categories</Link>
             </li>
           </ul>
         </div>
@@ -50,13 +50,13 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mt-8 md:mt-0">
-          <a href="/">
+          < Link to='/' reloadDocument>
             <img
               src={footerLogo}
               className="h-[80px] w-[80px] md:h-[120px] md:w-[150px]"
               alt="vendorFinder-logo"
             />
-          </a>
+          </Link>
         </div>
       </div>
       <p className=" text-start md:text-center mt-10 md:mt-20 font-regular">

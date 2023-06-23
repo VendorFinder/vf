@@ -31,7 +31,7 @@ const WhyUs = () => {
               <WidgetsOutlinedIcon style={{ color: "#EFBC88" }} />
             </div>
             <h2 className="text-center mb-4">Extensive Vendor selection</h2>
-            <p className="px-8 mb-4">
+            <p className="px-8 mb-4 text-center">
               Discover a wide range of vetted and trusted event vendors,
               offering diverse services and specialties, all in one place.
             </p>
@@ -42,7 +42,7 @@ const WhyUs = () => {
               <ElectricBoltOutlinedIcon style={{ color: "#A0E9F4" }} />
             </div>
             <h2 className="text-center mb-4">Convenience and Efficiency</h2>
-            <p className="px-8 mb-4">
+            <p className="px-8 mb-4 text-center">
               Save time and effort by managing all your event-related tasks in
               one place and enjoy a a streamlined and efficient experience.
             </p>
@@ -53,13 +53,13 @@ const WhyUs = () => {
           <div className="hidden mt-8 border-[1px] border-[#EFEFEF] h-[29rem] w-0 absolute top-28 md:block"></div>
         </div>
 
-        <div className=" md:w-1/3 mt-10 md:mt-48">
+        <div className=" md:w-1/3 mt-10 md:mt-48 md:mr-[120px]">
           <div>
             <div className="border-2 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-4">
               <VerifiedUserOutlinedIcon style={{ color: "#A0E9F4" }} />
             </div>
             <h2 className="text-center mb-4">Quality Assurance</h2>
-            <p className="px-8 mb-4">
+            <p className="px-8 mb-4 text-center">
               Discover a wide range of vetted and trusted event vendors,
               offering diverse services and specialties, all in one place.
             </p>
@@ -70,7 +70,7 @@ const WhyUs = () => {
               <HeadsetMicOutlinedIcon style={{ color: "#EFBC88" }} />
             </div>
             <h2 className="text-center mb-4">Convenience and Efficiency</h2>
-            <p className="px-8 mb-4">
+            <p className="px-8 mb-4 text-center">
               Save time and effort by managing all your event-related tasks in
               one place and enjoy a a streamlined and efficient experience.
             </p>
