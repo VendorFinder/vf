@@ -5,7 +5,7 @@ const ServiceCard = ({ img, title, text, bgColor }) => {
 
   return (
     <div className="max-w-sm">
-      <div className="w-full h-56">
+      <div className="w-full">
         <img
           className="object-cover w-full h-full rounded"
           src={img}

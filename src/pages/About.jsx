@@ -66,7 +66,7 @@ const About = () => {
         <section className="mt-[116px] md:px-[120px] sm:px-[30px]">
           <div className="relative min-h-[647px] flex justify-end bg-contain bg-no-repeat">
               <img className="absolute h-full z-[-1]" src={arrowdownbg} alt="bg" />
-              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[0px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center h-full min-h-[406px] whitespace-nowrap z-[-1]">WHAT WE ARE ALL ABOUT </span>
+              <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[100px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center md:h-full min-h-[406px] whitespace-nowrap z-[-1]">WHAT WE ARE ALL ABOUT </span>
               <div className="absolute sm:left-[20%] left-[50%] lg:left-[100px] xl:left-[140px] lg:top-0 xl:top-[-30px] sm:bottom-[-186px] bottom-[-106px] transform -translate-x-1/2 sm:-translate-x-0">
                 <img className="rounded-[10px] xl:max-w-[433px] lg:max-w-[350px] sm:max-w-[333px] max-w-[261px]" src={cook} alt="" />
               </div>
@@ -99,12 +99,12 @@ const About = () => {
         <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[50px]">Meet the Team</h2>
           <Slide/>
         </section>
-        <section className="md:px-[120px] spx-[30px] mt-[131px]">
+        <section className="md:px-[120px] px-[30px] mt-[131px]">
           <div className="bg-[#F7ECE1] md:px-[137px] px-[30px] py-[50px]">
             <h2 className="font-playfair font-[700] sm:text-[35px] text-[30px] text-center text-[#04172A]">The Journey through our works</h2>
             <div className="mt-[66px] flex flex-col gap-[50px]">
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
-                <div className="relative md:w-[45%] w-full h-[382px]">
+                <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
                   <img className="absolute md:w-[400px] w-full h-full z-[9]" src={ngosa} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
@@ -114,7 +114,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex  flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
-                <div className="relative md:w-[45%] w-full h-[382px]">
+                <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
                   <img className="absolute md:w-[400px] w-full h-full z-[9]" src={dani} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>
@@ -124,7 +124,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
-                <div className="relative md:w-[45%] w-full h-[382px]">
+                <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
                   <img className="absolute md:w-[400px] w-full h-full z-[9]" src={weddings} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
@@ -134,7 +134,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
-                <div className="relative md:w-[45%] w-full h-[382px]">
+                <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
                   <img className="absolute md:w-[400px] w-full h-full z-[9]" src={glass} alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>

@@ -12,7 +12,7 @@ import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 const PreviousButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-[70px] md:right-[150px] top-[490px] md:top-[428px] transform -translate-y-1/2 md:translate-y-0"
+    className="absolute right-[70px] md:right-[150px] top-[490px] md:top-[428px] bottom-[-93px] transform -translate-y-1/2 md:translate-y-0"
   >
     <WestOutlinedIcon style={{ color: "#B1B1B1", fontSize: "30px" }} />
   </button>
@@ -21,7 +21,7 @@ const PreviousButton = ({ onClick }) => (
 const NextButton = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-[20px] md:right-[100px] top-[490px] md:top-[420px] transform -translate-y-1/2 md:translate-y-0"
+    className="absolute right-[20px] md:right-[100px] top-[490px] md:top-[420px] bottom-[-100px] transform -translate-y-1/2 md:translate-y-0"
   >
     <EastOutlinedIcon style={{ color: "#0C4E8B", fontSize: "45px" }} />
   </button>
@@ -53,7 +53,7 @@ const AllServiceCard = () => {
   };
 
   return (
-    <div>
+    <div className="py-[50px] md:px-[80px] px-[30px]">
       <Slider {...settings} className="py-8 md:py-2 overflow:hidden">
         <ServiceCard
           img={Decoration}

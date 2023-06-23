@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick-theme.css";
 import next from '../../assets/about/next.png'
 import prev from '../../assets/about/prev.png'
 import team from '../../assets/about/team.png'
+import member1 from '../../assets/member1.png'
+import member2 from '../../assets/member2.png'
+import member3 from '../../assets/member3.png'
+
 
 
 const PreviousButton = ({ onClick }) => (
@@ -46,13 +50,13 @@ export default function Slide() {
   return (
     <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto  ">
       <div className=" w-full h-[426px]">
-        <img src={team} alt="team" />
+        <img src={member1} alt="team" />
       </div>
       <div className=" w-full h-[426px]">
-      <img src={team} alt="team" />
+      <img src={member3} alt="team" />
       </div>
       <div className="  w-full h-[426px]">
-      <img src={team} alt="team" />
+      <img src={member2} alt="team" />
       </div>
       <div className=" w-full h-[426px]">
       <img src={team} alt="team" />
