@@ -6,7 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
+p{
+  font-family: lato;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: "Playfair Display", serif;
+}
 /* Style adjustments for faq coomponent library used */
 .faq .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c{
   border-bottom: none;
@@ -74,4 +84,14 @@
   .w-100plus20 {
     width: calc(100% + 20px);
   }
+}
+.partner-box {
+  background:url("./assets/partnerShape.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+  padding-bottom: 30px;
+  z-index: 1;
 }

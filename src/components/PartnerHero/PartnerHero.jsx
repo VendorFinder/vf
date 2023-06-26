@@ -10,10 +10,10 @@ const PartnerHero = () => {
     <section className={styles.partnerHero}>
       <div className=" flex items-center justify-center">
         <div
-          className={`md:w-1.5/3 px-4 mt-32  md:px-10 py-4 md:py-5  ${styles.partner}`}
+          className={`md:w-[80%] mx-auto px-4  md:px-10 py-4 md:py-5  ${styles.partner}`}
         >
           <h1 className="mb-5 text-heading-5 md:text-heading-2 md:text-center font-bold">
-            Join Our Growing Network of <br /> Event Vendors
+            Join Our Growing Network of Event Vendors
           </h1>
           <p className="mb-4 md:mb-10 md:text-center text-body-1 font-lato">
             Reach a wider audience and boost your business

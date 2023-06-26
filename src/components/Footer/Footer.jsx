@@ -53,7 +53,7 @@ const Footer = () => {
           < Link to='/' reloadDocument>
             <img
               src={footerLogo}
-              className="h-[80px] w-[80px] md:h-[120px] md:w-[150px]"
+              className="h-[70px] md:h-[120px]"
               alt="vendorFinder-logo"
             />
           </Link>
