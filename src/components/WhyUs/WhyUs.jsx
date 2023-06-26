@@ -44,7 +44,7 @@ const WhyUs = () => {
             <h2 className="text-center mb-4 font-[700]">Convenience and Efficiency</h2>
             <p className="px-12 mb-4 text-center">
               Save time and effort by managing all your event-related tasks in
-              one place and enjoy a a streamlined and efficient experience.
+              one place and enjoy a streamlined and efficient experience.
             </p>
           </div>
         </div>

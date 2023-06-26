@@ -7,7 +7,8 @@
     url("../../assets/whyusbg.png");
   background-size: contain;
   background-position: center;
-  height: 40rem;
+  /* height: 40rem; */
+  padding-bottom: 30px;
 }
 
 @media (max-width: 498px) {
@@ -15,6 +16,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 135vh;
+    /* height: 135vh; */
   }
 }
