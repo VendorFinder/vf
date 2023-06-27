@@ -10,6 +10,8 @@ export default {
         serif: ["Lato", "serif"],
       },
       backgroundImage: {
+        "home-hero":
+          "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('./src/assets/heroImg.png')",
         "about-hero":
           "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
         "about-2":
