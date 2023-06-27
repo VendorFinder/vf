@@ -14,7 +14,7 @@ const VendorReg = () => {
             you in expanding your <br /> business.
           </p>
           <Link to="/partner">
-            <button className="btn btn-Primary font-serif mb-0 mb-4">
+            <button className="btn btn-Primary font-serif mb-0 md:mb-4">
               Join Now
             </button>
           </Link>

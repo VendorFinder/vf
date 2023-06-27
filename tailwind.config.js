@@ -12,6 +12,10 @@ export default {
       backgroundImage: {
         "home-hero":
           "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('./src/assets/heroImg.png')",
+        "whyUs-hero":
+          "radial-gradient(#04172a 0%, rgba(4, 23, 42, 0.9), rgba(4, 23, 42, 0.9)), url('./src/assets/whyusbg.png')",
+        "Vendor-reg":
+          "radial-gradient(#04172a 0%, rgba(4, 23, 42, 0.9), rgba(4, 23, 42, 0.9)), url('./src/assets/womanSm.png')",
         "about-hero":
           "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
         "about-2":
