@@ -1,20 +1,16 @@
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import AL from "../../assets/about/arrowLeft.png";
+import AR from "../../assets/about/arrowRight.png";
 import Cards from "../Cards/Cards";
 const Testimonials = () => {
   return (
     <div className="mb-8">
       <div className="flex items-center justify-center mt-16">
-        <h5 className="font-serif text-body-2 font-regular">
-          <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
-          Testimonials
-          <TrendingFlatIcon
-            style={{
-              transform: "rotate(180deg)",
-              fontSize: "35px",
-              color: "#EFBC88",
-            }}
-          />
-        </h5>
+        <div className="flex gap-[10px] items-center mb-[10px]">
+          <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+          <span className="sm:text-[16px] text-[18px]"> Testimonials</span>
+          <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+        </div>
       </div>
 
       <h2 className="text-start px-5 md:text-center text-heading-5 mb-2">

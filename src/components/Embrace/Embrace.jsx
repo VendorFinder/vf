@@ -23,7 +23,7 @@ const Embrace = () => {
         </h2>
         <p className="text-body-1 font-serif mb-8">
           We facilitate memorable and successful events
-          <br className="hidden md:inline" /> by providing a diverse and curated
+          <br className="hidden md:inline" /> by providing diverse and curated
           selection of <br className="hidden md:inline" /> vendors, ensuring
           that every client finds the <br className="hidden md:inline" />
           perfect match for their specific event requirements.
