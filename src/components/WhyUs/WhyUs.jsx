@@ -7,7 +7,7 @@ import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
 import styles from "./WhyUs.module.css";
 const WhyUs = () => {
   return (
-    <section className={styles.whyUsMain}>
+    <section className="bg-whyUs-hero  bg-cover md:bg-contain  bg-center pb-[30px]">
       <div className="flex flex-col md:flex-row text-white">
         <div className=" text-white pl-6 md:pl-20 pt-8 md:pt-24 md:w-1/3">
           <div className="flex gap-[10px] items-center mb-[10px]">
@@ -15,7 +15,7 @@ const WhyUs = () => {
             <span className="sm:text-[16px] text-[18px]">Benefits</span>
             <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
           </div>
-          <h1 className="font-playfair text-heading-5 font-bold">
+          <h1 className="font-playfair text-[24px] font-bold">
             Why Use VendorFinder?
           </h1>
         </div>
@@ -25,7 +25,9 @@ const WhyUs = () => {
             <div className="border-2 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-4">
               <WidgetsOutlinedIcon style={{ color: "#EFBC88" }} />
             </div>
-            <h2 className="text-center mb-4 font-[700]">Extensive Vendor selection</h2>
+            <h2 className="text-center mb-4 font-[700]">
+              Extensive Vendor selection
+            </h2>
             <p className="px-12 mb-4 text-center">
               Discover a wide range of vetted and trusted event vendors,
               offering diverse services and specialties, all in one place.
@@ -36,7 +38,9 @@ const WhyUs = () => {
             <div className="border-2 w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-4 mt-8">
               <ElectricBoltOutlinedIcon style={{ color: "#A0E9F4" }} />
             </div>
-            <h2 className="text-center mb-4 font-[700]">Convenience and Efficiency</h2>
+            <h2 className="text-center mb-4 font-[700]">
+              Convenience and Efficiency
+            </h2>
             <p className="px-12 mb-4 text-center">
               Save time and effort by managing all your event-related tasks in
               one place and enjoy a streamlined and efficient experience.
@@ -55,7 +59,8 @@ const WhyUs = () => {
             </div>
             <h2 className="text-center mb-4 font-[700]">Quality Assurance</h2>
             <p className="px-12 mb-4 text-center">
-            All vendors on our platform undergo a thorough vetting process to ensure exceptional service quality.
+              All vendors on our platform undergo a thorough vetting process to
+              ensure exceptional service quality.
             </p>
           </div>
           <div>
@@ -65,7 +70,8 @@ const WhyUs = () => {
             </div>
             <h2 className="text-center mb-4 font-[700]">Dedicated Support</h2>
             <p className="px-12 mb-4 text-center">
-            We are available to address any inquiries, concerns, or issues throughout your event planning journey. 
+              We are available to address any inquiries, concerns, or issues
+              throughout your event planning journey.
             </p>
           </div>
         </div>

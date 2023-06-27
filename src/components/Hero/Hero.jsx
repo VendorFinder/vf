@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="bg-home-hero h-fit md:h-screen bg-center py-5 md:py-0 pt-0  md:pt-10 bg-cover">
+    <div className="bg-home-hero h-screen md:h-screen bg-center py-5 md:py-0 pt-0  md:pt-10 bg-cover">
       <h1 className="font-sans text-heading-4 md:text-heading-2 text-neutral text-start md:text-center px-8 md:px-0 pt-12 md:pt-40 pb-10 md:pb-20 font-[700]">
         Find The Right Vendors To <br className="hidden md:inline" /> Make Your
         Event Exceptional
