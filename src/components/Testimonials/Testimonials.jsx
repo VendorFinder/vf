@@ -20,7 +20,7 @@ const Testimonials = () => {
         <div className="w-12 h-2 bg-[#0C4E8B] mb-4"></div>
       </div>
 
-      <p className="px-5 md:text-center mb-20">
+      <p className="px-5 md:text-center">
         More than 100 hosts chose to connect with event vendors <br /> through
         VendorFinder
       </p>

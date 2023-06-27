@@ -9,6 +9,7 @@ import { Modal } from 'react-responsive-modal';
 
 import locationIcon from '../../assets/about/locationIcon.svg'
 import Spinner from "../Spinner/Spinner";
+import { Link } from "react-router-dom";
 
 
 export default function Data({cat, searchQuery}) {
@@ -35,7 +36,7 @@ export default function Data({cat, searchQuery}) {
         query = query.eq('category', cat)
       }
       if (searchQuery) {
-        query = query.or(`fname.ilike.%${searchQuery}%,lname.ilike.%${searchQuery}%,biz_name.ilike.%${searchQuery}%,address.ilike.%${searchQuery}%,insta.ilike.%${searchQuery}%,city.ilike.%${searchQuery}%,state.ilike.%${searchQuery}%,category.ilike.%${searchQuery}%,bio.ilike.%${searchQuery}%`);
+        query = query.or(`fname.ilike.%${searchQuery}%,lname.ilike.%${searchQuery}%,biz_name.ilike.%${searchQuery}%,address.ilike.%${searchQuery}%,insta.ilike.%${searchQuery}%,city.ilike.%${searchQuery}%,state.ilike.%${searchQuery}%,category.ilike.%${searchQuery}%`);
       }
       const {data, error} = await query
       console.log(data);
@@ -63,7 +64,12 @@ export default function Data({cat, searchQuery}) {
   return (
     <div className="flex flex-wrap gap-[50px]">
       {!isLoading && data.length === 0 && <div className="flex justify-center items-center w-full">
-        <span className="font-playfair font-[700] text-[20px] text-primary">No vendor for this category or search</span>
+        {!searchQuery && <div><span className="font-playfair font-[700] text-[20px] text-primary">No vendor for this category or search</span></div>}
+        {searchQuery && <div className="flex flex-col items-center">
+          <span className="font-playfair font-[700] text-[20px] text-primary">No Results Found</span>
+          <p className="font-lato font-[400] md:text-[18px] text-[16px] text-text-body-2 text-center leading-8">We're sorry, but it appears that there are no vendors currently available matching your search criteria. Please consider refining your search or try again later as new vendors are continually joining our platform. If you need assistance or have any specific requirements, feel free to <Link to='/' className="text-primary">contact us</Link></p>
+
+        </div>}
         </div>}
       {isLoading && <Spinner h={80} w={80}/>}
       {data && data.map((d, i) => (

@@ -1,8 +1,12 @@
 import embrace from "../../assets/embracee.png";
+import embrace1 from "../../assets/embrace1.png";
+import embrace2 from "../../assets/embrace2.png";
+
+
 import { Link } from "react-router-dom";
 const Embrace = () => {
   return (
-    <section className="w-full flex-col-reverse md:flex-row flex">
+    <section className="relative w-full flex-col-reverse md:flex-row flex">
       <div className="w-full flex items-center justify-center">
         <img
           src={embrace}
@@ -26,10 +30,12 @@ const Embrace = () => {
         </p>
         <Link to="/about">
           <button className="btn btn-Primary mb-0 md:mb-3 font-serif">
-            Read more
+            Learn more
           </button>
         </Link>
       </div>
+      <img src={embrace1} className="absolute top-[-50px] z-[-1] md:block hidden right-0" alt="bg" />
+      <img src={embrace2} className="absolute top-[-50px] z-[-1] block md:hidden right-0" alt="bg" />
     </section>
   );
 };

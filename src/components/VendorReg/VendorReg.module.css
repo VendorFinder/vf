@@ -1,8 +1,8 @@
 .vendorMain {
   background: radial-gradient(
       circle,
-      rgba(4, 23, 42, 0.8),
-      rgba(4, 23, 42, 0.8)
+      rgba(4, 23, 42, 0.40),
+      rgba(4, 23, 42, 0.40)
     ),
     url("../../assets/vendorWoman.png");
   background-size: cover;
@@ -10,20 +10,25 @@
   height: 25rem;
 }
 .woman {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #F7ECE1 0%, rgba(247, 236, 225, 0.3) 100%);
 }
 
 @media (max-width: 498px) {
   .vendorMain {
     background: radial-gradient(
         circle,
-        rgba(4, 23, 42, 0.8),
-        rgba(4, 23, 42, 0.8)
+        rgba(4, 23, 42, 0.40),
+        rgba(4, 23, 42, 0.40)
       ),
       url("../../assets/womanSm.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    height: 20rem;
+    height: 400px;
     background-repeat: no-repeat;
+    width: 100%;
+  }
+  .woman {
+    justify-content: center;
+    text-align: center;
   }
 }

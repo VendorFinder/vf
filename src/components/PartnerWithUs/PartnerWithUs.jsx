@@ -5,12 +5,12 @@ import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 const PartnerWithUs = () => {
   return (
-    <section className="mt-16 mb-12">
+    <section className="mt-16 mb-12 px-[30px]">
       <div className="mb-8">
-        <h1 className="text-heading-3 font-bold text-center mb-4">
+        <h1 className="md:text-heading-3 text-[25px] font-bold text-center mb-4">
           Why Choose Us
         </h1>
-        <p className="font-lato text-body-1 text-center">
+        <p className="font-lato md:text-body-1 text-center">
           Join our dynamic events management platform and showcase your services
           <br />
           to a vast audience of potential clients.
@@ -21,18 +21,18 @@ const PartnerWithUs = () => {
         <div className="md:w-1/2 flex items-center justify-center relative">
           <img src={partnerShape} className="w-[29rem] md:w-[27rem]" alt="" />
 
-          <div className="absolute">
+          <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
               <WidgetsOutlinedIcon
                 style={{ color: "#EFBC88", fontSize: "35px" }}
               />
-              <h3 className="font-bold text-body-1 mb-4">
+              <h3 className="font-bold md:text-body-1">
                 Extensive Vendor selection
               </h3>
             </span>
-            <p className="pl-2 md:pl-12 font-lato">
-              Discover a wide range of vetted and trusted <br /> event vendors,
-              offering diverse services and <br /> specialties, all in one
+            <p className="pl-12 font-lato md:tex-[16px] text-[14px]">
+              Discover a wide range of vetted and trusted event vendors,
+              offering diverse services and specialties, all in one
               place.
             </p>
           </div>
@@ -40,16 +40,16 @@ const PartnerWithUs = () => {
         <div className="md:w-1/2 flex items-center justify-center relative">
           <img src={partnerShape} className="w-[27rem]" alt="" />
 
-          <div className="absolute">
+          <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
               <SupervisorAccountOutlinedIcon
                 style={{ color: "#EFBC88", fontSize: "35px" }}
               />
-              <h3 className="font-bold text-body-1 mb-4">Qualified Leads</h3>
+              <h3 className="font-bold md:text-body-1">Qualified Leads</h3>
             </span>
-            <p className="pl-2 md:pl-12 font-lato">
-              You can connect with highly relevant leads <br /> and increase
-              your chances of securing <br /> bookings.
+            <p className="pl-12 font-lato md:text-[16px] text-[14px]">
+              You can connect with highly relevant leads and increase
+              your chances of securing bookings.
             </p>
           </div>
         </div>
@@ -58,25 +58,25 @@ const PartnerWithUs = () => {
         <div className="md:w-1/2 flex items-center justify-center relative">
           <img src={partnerShape} className="w-[27rem]" alt="" />
 
-          <div className="absolute">
+          <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
               <WorkspacePremiumOutlinedIcon
                 style={{ color: "#EFBC88", fontSize: "35px" }}
               />
-              <h3 className="font-bold text-body-1 mb-4">
+              <h3 className="font-bold md:text-body-1">
                 Enhanced Credibility
               </h3>
             </span>
-            <p className="pl-2 md:pl-12 font-lato">
-              By associating with VendorFinder, you can <br /> add credibility
-              and trustwothiness to your <br /> business.
+            <p className="pl-12 font-lato md:text-[16px] text-[14px]">
+              By associating with VendorFinder, you can add credibility
+              and trustwothiness to your business.
             </p>
           </div>
         </div>
         <div className="md:w-1/2 flex items-center justify-center relative">
           <img src={partnerShape} className="w-[27rem]" alt="" />
 
-          <div className="absolute">
+          <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex  gap-2 md:gap-4">
               <CampaignOutlinedIcon
                 style={{ color: "#EFBC88", fontSize: "35px" }}
@@ -85,9 +85,9 @@ const PartnerWithUs = () => {
                 Cost-Effective Marketing
               </h3>
             </span>
-            <p className="pl-2 md:pl-12 font-lato">
-              Listing your services on VendorFinder <br /> eliminates the need
-              for extensive marketing <br /> efforts and expenses.
+            <p className="pl-12 font-lato md:text-[16px] text-[14px]">
+              Listing your services on VendorFinder eliminates the need
+              for extensive marketing efforts and expenses.
             </p>
           </div>
         </div>
