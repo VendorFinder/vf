@@ -8,7 +8,7 @@ const ContactForm = () => {
   return (
     <section className="w-full mx-auto ">
       <div className="flex flex-col md:flex-row md:mx-32 md:my-10 md:h-[32rem]  bg-[#0C4E8B] text-white">
-        <div className="w-full px-4 md:px-20  md:py-10">
+        <div className="w-full px-4 md:px-20 pt-10 md:pt-10 md:py-10">
           <div className="flex gap-[10px] items-center mb-[10px]">
             <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
             <span className="sm:text-[16px] text-[18px]">Contact Us</span>
