@@ -1,4 +1,5 @@
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import AL from "../../assets/about/arrowLeft.png";
+import AR from "../../assets/about/arrowRight.png";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -8,17 +9,11 @@ const ContactForm = () => {
     <section className="w-full mx-auto ">
       <div className="flex flex-col md:flex-row md:mx-32 md:my-10 md:h-[32rem]  bg-[#0C4E8B] text-white">
         <div className="w-full px-4 md:px-20  md:py-10">
-          <h5 className="font-serif text-body-2 mb-3 font-regular">
-            <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
-            Contact Us
-            <TrendingFlatIcon
-              style={{
-                transform: "rotate(180deg)",
-                fontSize: "35px",
-                color: "#EFBC88",
-              }}
-            />
-          </h5>
+          <div className="flex gap-[10px] items-center mb-[10px]">
+            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <span className="sm:text-[16px] text-[18px]">Contact Us</span>
+            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+          </div>
           <h2 className="text-2xl font-bold mb-6"> Have Questions?</h2>
           <p className="mb-8">
             Feel free to contact us any time. We will get back to you as soon as
