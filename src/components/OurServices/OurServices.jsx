@@ -1,4 +1,5 @@
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import AL from "../../assets/about/arrowLeft.png";
+import AR from "../../assets/about/arrowRight.png";
 import { Link } from "react-router-dom";
 import AllServiceCard from "../Cards/AllServiceCard";
 
@@ -7,17 +8,11 @@ const OurServices = () => {
     <section className="mb-24 md:mb-16">
       <div className="md:flex  w-full px-4 md:px-12">
         <div className="px-4 md:px-10 w-full">
-          <h5 className="font-serif text-body-2 font-regular">
-            <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
-            Our Services
-            <TrendingFlatIcon
-              style={{
-                transform: "rotate(180deg)",
-                fontSize: "35px",
-                color: "#EFBC88",
-              }}
-            />
-          </h5>
+          <div className="flex gap-[10px] items-center mb-[10px]">
+            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <span className="sm:text-[16px] text-[18px]">Our Services</span>
+            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+          </div>
           <h2 className="text-heading-4 md:text-heading-3 font-semiBold">
             Your One-Stop Solution For <br className="hidden md:inline" /> A
             Hassle-Free Event

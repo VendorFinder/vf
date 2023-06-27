@@ -1,4 +1,5 @@
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import AL from "../../assets/about/arrowLeft.png";
+import AR from "../../assets/about/arrowRight.png";
 import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import ElectricBoltOutlinedIcon from "@mui/icons-material/ElectricBoltOutlined";
 import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
@@ -9,17 +10,11 @@ const WhyUs = () => {
     <section className={styles.whyUsMain}>
       <div className="flex flex-col md:flex-row text-white">
         <div className=" text-white pl-6 md:pl-20 pt-8 md:pt-24 md:w-1/3">
-          <h5 className="font-serif text-body-2 font-regular">
-            <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
-            Benefits
-            <TrendingFlatIcon
-              style={{
-                transform: "rotate(180deg)",
-                fontSize: "35px",
-                color: "#EFBC88",
-              }}
-            />
-          </h5>
+          <div className="flex gap-[10px] items-center mb-[10px]">
+            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <span className="sm:text-[16px] text-[18px]">Benefits</span>
+            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+          </div>
           <h1 className="font-playfair text-heading-5 font-bold">
             Why Use VendorFinder?
           </h1>

@@ -53,7 +53,10 @@ const Cards = () => {
   };
   return (
     <div>
-      <Slider {...settings} className="overflow-hidden px-2 md:px-20 py-10">
+      <Slider
+        {...settings}
+        className="overflow-hidden flex items-center justify-center px-0 md:px-20 py-10"
+      >
         <EventHostCard
           imageSrc={imageSrc}
           title="Ayomide Bamidele"

@@ -3,7 +3,8 @@ import pattern from "../../assets/Group38.png";
 import smile from "../../assets/smile.png";
 import smileguy from "../../assets/smileguy.png";
 import trxsuccess from "../../assets/trxsuccess.png";
-import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
+import AL from "../../assets/about/arrowLeft.png";
+import AR from "../../assets/about/arrowRight.png";
 import { Link } from "react-router-dom";
 const HowItWork = () => {
   return (
@@ -19,17 +20,11 @@ const HowItWork = () => {
           </div>
         </div>
         <div className="w-full px-2 md:px-6">
-          <h5 className="font-serif text-body-2 font-regular">
-            <TrendingFlatIcon style={{ fontSize: "35px", color: "#EFBC88" }} />
-            How it works
-            <TrendingFlatIcon
-              style={{
-                transform: "rotate(180deg)",
-                fontSize: "35px",
-                color: "#EFBC88",
-              }}
-            />
-          </h5>
+          <div className="flex gap-[10px] items-center mb-[10px]">
+            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <span className="sm:text-[16px] text-[18px]">How it works</span>
+            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+          </div>
           <div className="md:flex">
             <h2 className=" md:w-auto md:text-subHeading-1 font-playfair font-bold">
               Easy Steps To Use This <br className="hidden md:inline" /> Service

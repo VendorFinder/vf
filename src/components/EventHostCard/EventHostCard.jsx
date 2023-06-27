@@ -3,7 +3,7 @@ import quotationMark from "../../assets/quotationMark.png";
 
 const EventHostCard = ({ imageSrc, title, text }) => {
   return (
-    <div className="relative  pt-[50px]">
+    <div className="relative  pt-[50px] flex items-center justify-center">
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2/2 w-full flex justify-center">
         <img className="w-20 rounded-full my-2" src={imageSrc} alt="Card" />
       </div>

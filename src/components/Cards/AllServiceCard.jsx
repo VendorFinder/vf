@@ -54,7 +54,10 @@ const AllServiceCard = () => {
 
   return (
     <div>
-      <Slider {...settings} className="py-8 md:py-2 overflow:hidden">
+      <Slider
+        {...settings}
+        className="py-8 md:py-2 overflow:hidden flex items-center justify-center"
+      >
         <ServiceCard
           img={Decoration}
           title="Decoration"
