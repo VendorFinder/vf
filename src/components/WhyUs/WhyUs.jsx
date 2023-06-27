@@ -4,7 +4,7 @@ import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import ElectricBoltOutlinedIcon from "@mui/icons-material/ElectricBoltOutlined";
 import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import HeadsetMicOutlinedIcon from "@mui/icons-material/HeadsetMicOutlined";
-import styles from "./WhyUs.module.css";
+
 const WhyUs = () => {
   return (
     <section className="bg-whyUs-hero  bg-cover md:bg-contain  bg-center pb-[30px]">
