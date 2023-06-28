@@ -4,11 +4,28 @@ import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { useForm, ValidationError } from "@formspree/react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("{myyqgpvl}");
+  const notify = () =>
+    toast("Thank you for reaching out, we will get back to you shortly!");
+  const [state, handleSubmit] = useForm("myyqgpvl");
   if (state.succeeded) {
-    return <div>Thank you for signing up!</div>;
+    return (
+      <ToastContainer
+        position="top-right"
+        autoClose={7000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+    );
   }
   return (
     <section className="w-full mx-auto ">
@@ -75,6 +92,7 @@ const ContactForm = () => {
           />
           <div className="py-6">
             <button
+              onClick={notify}
               disabled={state.submitting}
               type="submit"
               className="btn btn-Secondary text-[#0C4E8B] py-3 px-12 mx-3 rounded"
