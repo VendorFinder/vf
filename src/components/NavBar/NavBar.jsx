@@ -1,7 +1,4 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png";
-import menu from "../../assets/menu.svg";
-// import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -19,14 +16,14 @@ const NavBar = () => {
           <div className="flex justify-between items-center">
             <div className="cursor-pointer">
               <NavLink reloadDocument to="/" className="h-16">
-                <img className="h-[55px] md:h-[80px]" src={logo} alt="vendorFinder-logo" />
+                <img className="h-[55px] md:h-[80px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944513/logo_v9frbn.png" alt="vendorFinder-logo" />
               </NavLink>
             </div>
             <div
               onClick={() => setOpen(!open)}
               className="md:hidden "
             >
-              <img src={menu} alt="menu" />
+              <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/menu_ocjd0n.svg" alt="menu" />
             </div>
           </div>
           <nav>

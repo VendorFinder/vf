@@ -3,14 +3,6 @@ import Footer from "../components/Footer/Footer";
 import { Link } from "react-router-dom";
 
 //Images and Icons
-import AL from '../assets/about/arrowLeft.png'
-import AR from '../assets/about/arrowRight.png'
-import cook from '../assets/about/confident-head-cook.png'
-import ngosa from '../assets/about/ngosa.png'
-import glass from '../assets/about/glass.png'
-import weddings from '../assets/about/weddings.png'
-import dani from '../assets/about/dani.png'
-import arrowdownbg from '../assets/about/arrowdownbg.png'
 import Faq from "../components/About/Faq";
 import Slide from "../components/About/Slider";
 
@@ -20,7 +12,7 @@ const About = () => {
     <div>
       <NavBar />
       <main className="max-w-[1400px] mx-auto mb-[78px]">
-        <section className="flex justify-center h-[615px] items-center bg-about-hero bg-cover bg-t-black">
+        <section className="flex justify-center h-[85vh] items-center bg-about-hero bg-cover bg-t-black">
           <div className="font-playfair border border-[0.5px] py-[48px] sm:w-[547px] w-[90%] mx-auto text-center">
             <h1 className="font-[700] md:text-[50px] text-[35px] text-[#FFFFFF]">WHO ARE WE</h1>
           </div>
@@ -30,9 +22,9 @@ const About = () => {
             <div className="border border-[#04172A] flex lg:justify-end lg:items-center lg:min-h-[480px] md:min-h-[580px] min-h-[680px]">
               <div className="lg:w-[40%] lg:pr-[50px] py-[36px] px-[27px]">
                 <div className="flex gap-[10px] items-center mb-[10px]"> 
-                  <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+                  <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944498/arrowLeft_zgmle8.png" alt="icon" />
                   <span className="sm:text-[16px] text-[14px]">Our Mission</span>
-                  <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+                  <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944499/arrowRight_pmf9cx.png" alt="icon" />
                 </div>
                 <div className="flex flex-col gap-[22px]">
                   <h2 className="text-[#04172A] font-[700] sm:text-[30px] text-[20px]">WHAT WE ARE DOING </h2>
@@ -48,9 +40,9 @@ const About = () => {
             <div className="border border-[#04172A] flex lg:justify-start lg:items-center lg:min-h-[480px] md:min-h-[580px] min-h-[680px]">
               <div className="lg:w-[40%] lg:pl-[50px] py-[36px] px-[27px]">
                 <div className="flex gap-[10px] items-center mb-[10px]"> 
-                  <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
-                  <span>Our Vision</span>
-                  <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+                  <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944498/arrowLeft_zgmle8.png" alt="icon" />
+                  <span className="sm:text-[16px] text-[14px]">Our Vision</span>
+                  <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944499/arrowRight_pmf9cx.png" alt="icon" />
                 </div>
                 <div className="flex flex-col gap-[22px]">
                   <h2 className="text-[#04172A] font-[700] sm:text-[30px] text-[20px]">WHAT WE AIM TO DO  </h2>
@@ -65,10 +57,10 @@ const About = () => {
         </section>
         <section className="mt-[116px] md:px-[120px] sm:px-[30px]">
           <div className="relative min-h-[647px] flex justify-end bg-contain bg-no-repeat">
-              <img className="absolute h-full z-[-1]" src={arrowdownbg} alt="bg" />
+              <img className="absolute h-full z-[-1]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944499/arrowdownbg_f5v6l9.png" alt="bg" />
               <span className="absolute sm:left-[-170px] left-[-110px] sm:top-[-70px] top-[100px] font-playfair font-[700] h-[10px] text-[#04172A] text-[20px] sm:text-[32px] transform -rotate-90 flex items-center md:h-full min-h-[406px] whitespace-nowrap z-[-1]">WHAT WE ARE ALL ABOUT </span>
               <div className="absolute sm:left-[20%] left-[50%] lg:left-[100px] xl:left-[140px] lg:top-0 xl:top-[-30px] sm:bottom-[-186px] bottom-[-106px] transform -translate-x-1/2 sm:-translate-x-0">
-                <img className="rounded-[10px] xl:max-w-[433px] lg:max-w-[350px] sm:max-w-[333px] max-w-[261px]" src={cook} alt="" />
+                <img className="rounded-[10px] xl:max-w-[433px] lg:max-w-[350px] sm:max-w-[333px] max-w-[261px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944500/confident-head-cook_ht5yo0.png" alt="" />
               </div>
             <div className=" w-[90%] pt-[41px] flex flex-col items-start gap-[30px] xl:pl-[500px] lg:pl-[400px] pb-[350px] md:pb-[438px] lg:pb-0">
               <div className="flex flex-col gap-[18px] pr-[50px]" >
@@ -105,7 +97,7 @@ const About = () => {
             <div className="mt-[66px] flex flex-col gap-[50px]">
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={ngosa} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944502/ngosa_fn7g6b.png" alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -115,7 +107,7 @@ const About = () => {
               </div>
               <div className="flex  flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={dani} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944500/dani_nuwogv.png" alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -125,7 +117,7 @@ const About = () => {
               </div>
               <div className="flex md:flex-row flex-col-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={weddings} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944503/weddings_ddledb.png" alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] left-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">
@@ -135,7 +127,7 @@ const About = () => {
               </div>
               <div className="flex flex-col-reverse md:flex-row-reverse md:gap-[10%] gap-[45px] items-center">
                 <div className="relative md:w-[45%] w-full h-[300px] md:h-[382px]">
-                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src={glass} alt="ngosa" />
+                  <img className="absolute md:w-[400px] w-full h-full z-[9]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687948035/Mask_group_10_kerpak.png" alt="ngosa" />
                   <div className="absolute h-[92px] w-[92px] top-[-20px] right-[-20px] bg-[#FFFFFF]"></div>
                 </div>
                 <div className="md:w-[45%] w-full flex flex-col gap-[25px]">

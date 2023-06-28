@@ -2,7 +2,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import footerLogo from "../../assets/footerLogo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -52,7 +51,7 @@ const Footer = () => {
         <div className="mt-8 md:mt-0">
           < Link to='/' reloadDocument>
             <img
-              src={footerLogo}
+              src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944512/footerLogo_le1tno.png"
               className="h-[70px] md:h-[120px]"
               alt="vendorFinder-logo"
             />

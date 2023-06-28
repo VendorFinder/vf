@@ -7,7 +7,6 @@ import supabase from "../../config/supabaseConfig";
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
-import locationIcon from '../../assets/about/locationIcon.svg'
 import Spinner from "../Spinner/Spinner";
 import { Link } from "react-router-dom";
 
@@ -78,7 +77,7 @@ export default function Data({cat, searchQuery}) {
           <div>
             <span className="font-playfair font-[700] sm:text-[20px] text-[18px] text-secondary">{d.biz_name}</span>
             <div className='flex gap-[8px]'>
-              <img src={locationIcon} alt="location" />
+              <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944501/locationIcon_wakk8h.svg"alt="location" />
               <span className="font-lato font-[400] sm:text-[16px] text-[14px] text-secondary">{d.city}, {d.state}</span>
             </div>
           </div>
@@ -93,7 +92,7 @@ export default function Data({cat, searchQuery}) {
             <div>
               <span className="font-playfair font-[700] text-[20px] text-primary">{profile[0].biz_name}</span>
               <div className='flex gap-[8px]'>
-                <img src={locationIcon} alt="location" />
+                <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944501/locationIcon_wakk8h.svg" alt="location" />
                 <span>{profile[0].city}, {profile[0].state}</span>
               </div>
             </div>

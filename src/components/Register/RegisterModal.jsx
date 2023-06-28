@@ -4,8 +4,6 @@ import { Modal } from 'react-responsive-modal';
 import { useState } from 'react';
 import supabase from '../../config/supabaseConfig';
 import Spinner from '../Spinner/Spinner';
-import successLogo from '../../assets/sucess.png';
-import errorLogo from '../../assets/error.png';
 
 
 export default function RegisterModal({open, onClose}) {
@@ -498,13 +496,13 @@ export default function RegisterModal({open, onClose}) {
         </div>
       </div>}
       {success && !error &&<div className='flex flex-col items-center justify-center gap-[30px] py-[30px] '>
-        <img src={successLogo} alt="success" />
+        <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944521/sucess_tzy27z.png" alt="success" />
         <h2 className='font-playfair md:text-[30px] text-[20px] font-[700] text-primary'>Registration Received!</h2>
         <p className='font-lato font-[400] md:text-[18px] text-[16px] text-body-text-2 text-center'>Thank you for registering as a vendor on VendorFinder! Your information has been received and will be reviewed shortly. Expect a confirmation email within the next 24 hours.</p>
       </div>}
       {error && !success && <div className='flex flex-col items-center justify-center gap-[30px] py-[30px] '>
         <div className='flex items-center justify-center p-[50px] rounded-[50%] shadow'>
-          <img src={errorLogo} alt="error" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944511/error_xysrda.png" alt="error" />
         </div>
         <h2 className='font-playfair md:text-[30px] text-[20px] font-[700] text-primary'>Oops! Something Went Wrong</h2>
         <p className='font-lato font-[400] md:text-[18px] text-[16px] text-body-text-2 text-center'>We apologize for the inconvenience, but it seems there was an error processing your registration. Please double-check the information you entered and try again.</p>

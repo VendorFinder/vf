@@ -1,4 +1,3 @@
-import partnerShape from "../../assets/partnerShape.png";
 import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import SupervisorAccountOutlinedIcon from "@mui/icons-material/SupervisorAccountOutlined";
 import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
@@ -19,7 +18,7 @@ const PartnerWithUs = () => {
       {/* shape */}
       <div className="flex  flex-col md:flex-row">
         <div className="md:w-1/2 flex items-center justify-center relative">
-          <img src={partnerShape} className="w-[29rem] md:w-[27rem]" alt="" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/partnerShape_dsautb.png" className="w-[29rem] md:w-[27rem]" alt="" />
 
           <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
@@ -38,7 +37,7 @@ const PartnerWithUs = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex items-center justify-center relative">
-          <img src={partnerShape} className="w-[27rem]" alt="" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/partnerShape_dsautb.png" className="w-[27rem]" alt="" />
 
           <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
@@ -56,7 +55,7 @@ const PartnerWithUs = () => {
       </div>
       <div className="flex  flex-col md:flex-row">
         <div className="md:w-1/2 flex items-center justify-center relative">
-          <img src={partnerShape} className="w-[27rem]" alt="" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/partnerShape_dsautb.png" className="w-[27rem]" alt="" />
 
           <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex gap-2 md:gap-4">
@@ -74,7 +73,7 @@ const PartnerWithUs = () => {
           </div>
         </div>
         <div className="md:w-1/2 flex items-center justify-center relative">
-          <img src={partnerShape} className="w-[27rem]" alt="" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/partnerShape_dsautb.png" className="w-[27rem]" alt="" />
 
           <div className="absolute sm:w-[50%] md:w-[70%] lg:w-[50%] w-[80%] mx-auto">
             <span className="flex  gap-2 md:gap-4">

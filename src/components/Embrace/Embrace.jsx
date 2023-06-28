@@ -1,7 +1,3 @@
-import embrace from "../../assets/embracee.png";
-import embrace1 from "../../assets/embrace1.png";
-import embrace2 from "../../assets/embrace2.png";
-
 
 import { Link } from "react-router-dom";
 const Embrace = () => {
@@ -9,7 +5,7 @@ const Embrace = () => {
     <section className="relative w-full flex-col-reverse md:flex-row flex">
       <div className="w-full flex items-center justify-center">
         <img
-          src={embrace}
+          src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944506/embrace_xss3jm.png"
           className="w-96 md:w-fit h-72 md:h-fit  py-4 md:py-12 px-10 md:px-20 "
           alt="embrace"
         />
@@ -34,8 +30,8 @@ const Embrace = () => {
           </button>
         </Link>
       </div>
-      <img src={embrace1} className="absolute top-[-50px] z-[-1] md:block hidden right-0" alt="bg" />
-      <img src={embrace2} className="absolute top-[-50px] z-[-1] block md:hidden right-0" alt="bg" />
+      <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944505/embrace1_csataj.png" className="absolute top-[-50px] z-[-1] md:block hidden right-0" alt="bg" />
+      <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944509/embrace2_eaqhxw.png" className="absolute top-[-50px] z-[-1] block md:hidden right-0" alt="bg" />
     </section>
   );
 };
