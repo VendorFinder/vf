@@ -3,8 +3,13 @@ import AR from "../../assets/about/arrowRight.png";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import { useForm, ValidationError } from "@formspree/react";
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("{myyqgpvl}");
+  if (state.succeeded) {
+    return <div>Thank you for signing up!</div>;
+  }
   return (
     <section className="w-full mx-auto ">
       <div className="flex flex-col md:flex-row md:mx-32 md:my-10 md:h-[32rem]  bg-[#0C4E8B] text-white">
@@ -30,30 +35,47 @@ const ContactForm = () => {
             <LocationOnOutlinedIcon /> 7, Adeniji street, Ikeja, Lagos.
           </p>
         </div>
-        <form className="flex flex-col md:w-full bg-white mx-4 md:ml-44 md:mr-20 text-[#555C69] my-6 md:my-10 rounded-lg  p-4 ">
-          <label htmlFor="Name" className="pt-4 px-2">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col md:w-full bg-white mx-4 md:ml-44 md:mr-20 text-[#555C69] my-6 md:my-10 rounded-lg  p-4 "
+        >
+          <label htmlFor="name" className="pt-4 px-2">
             Name
           </label>
           <input
             type="text"
+            id="name"
+            name="name"
             className="mb-4 p-2 border border-gray-300 mx-2 rounded-lg"
           />
-          <label htmlFor="Email" className="pt-2 px-2">
+          <ValidationError prefix="Name" field="name" errors={state.errors} />
+          <label htmlFor="email" className="pt-2 px-2">
             Email
           </label>
           <input
             type="email"
+            id="email"
+            name="email"
             className="mb-4 p-2 border border-gray-300 mx-2 rounded-lg"
           />
-          <label htmlFor="Message" className="pt-2 px-2">
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+          <label htmlFor="message" className="pt-2 px-2">
             Message
           </label>
           <textarea
             rows="4"
+            id="message"
+            name="message"
             className="mb-4 p-3 mx-2 border border-gray-300 rounded-lg"
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
           />
           <div className="py-6">
             <button
+              disabled={state.submitting}
               type="submit"
               className="btn btn-Secondary text-[#0C4E8B] py-3 px-12 mx-3 rounded"
             >
