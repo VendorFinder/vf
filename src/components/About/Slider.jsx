@@ -96,7 +96,7 @@ export default function Slide() {
   return (
     <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto  ">
         {team && team.map(m => (          
-        <div key={m.id} className=" w-full h-[520px] flex flex-col items-center justify-center ">
+        <div key={m.id} className=" w-full sm:h-[520px] h-[400px] flex flex-col items-center justify-center ">
           <img className="h-[85%] w-full" src={m.picture} alt="team" />
           <div className="flex flex-col justify-center items-center mt-[30px]">
             <h3 className="text-body-text-1 font-[600]">{m.name}</h3>

@@ -8,9 +8,9 @@ const Services = () => {
     <div>
       <NavBar />
       <main>
-        <section className="bg-secondary min-h-screen">
-          <div className="md:px-[130px] md:pt-[150px] pt-[100px] pb-[57px] relative">
-            <img className="w-full" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944521/seviceheader_jvhbbk.png" alt="header" />
+        <section className="bg-secondary min-h-[85vh]">
+          <div className="md:px-[130px] md:pt-[150px] pt-[100px] pb-[57px] relative overflow-hidden">
+            <img className="min-w-[500px] min-h-[350px] " src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944521/seviceheader_jvhbbk.png" alt="header" />
             <div className="flex justify-center absolute bottom-[15px] left-0 w-full">
               <h1 className="font-playfair font-[700] md:text-[40px] text-[30px] bg-secondary text-white md:pt-[29px] md:pb-[10px] md:px-[62px] py-[8px] md:rounded-[10px] text-center">We Offer Exceptional Services</h1>
             </div>
