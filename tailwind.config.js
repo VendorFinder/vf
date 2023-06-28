@@ -16,6 +16,10 @@ export default {
           "radial-gradient(#04172a 0%, rgba(4, 23, 42, 0.9), rgba(4, 23, 42, 0.9)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1687945895/Mask_group_8_jslqad.png')",
         "about-hero":
           "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141958/about_bg1_onmam1.png')",
+          "cat-hero":
+          "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1687972333/Mask_group_17_oji2e7.png')",
+          "cat-herosm":
+          "linear-gradient(rgba(4, 23, 42, 0.8), rgba(4, 23, 42, 0.8)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1687972373/Mask_group_18_nvcl2g.png')",
         "about-2":
           "linear-gradient(rgba(222, 242, 245, 0.5), rgba(222, 242, 245, 0.5)), url('https://res.cloudinary.com/dgizre0g1/image/upload/v1686141957/about_bg2_pjhkyz.png')",
         "about-3":

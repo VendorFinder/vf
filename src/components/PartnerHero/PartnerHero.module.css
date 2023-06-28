@@ -8,7 +8,7 @@
       rgba(4, 23, 42, 0.8),
       rgba(4, 23, 42, 0.8)
     ),
-    url("../../assets/partnerhero.png");
+    url("https://res.cloudinary.com/dgizre0g1/image/upload/v1687944522/partnerhero_a9v9ki.png");
   background-size: cover;
   background-position: bottom;
   height: 85vh;
@@ -26,7 +26,7 @@
         rgba(4, 23, 42, 0.8),
         rgba(4, 23, 42, 0.8)
       ),
-      url("../../assets/partnersm.png");
+      url("https://res.cloudinary.com/dgizre0g1/image/upload/v1687944518/partnersm_qhqbkr.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

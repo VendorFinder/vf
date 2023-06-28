@@ -38,7 +38,6 @@ export default function Data({cat, searchQuery}) {
         query = query.or(`fname.ilike.%${searchQuery}%,lname.ilike.%${searchQuery}%,biz_name.ilike.%${searchQuery}%,address.ilike.%${searchQuery}%,insta.ilike.%${searchQuery}%,city.ilike.%${searchQuery}%,state.ilike.%${searchQuery}%,category.ilike.%${searchQuery}%`);
       }
       const {data, error} = await query
-      console.log(data);
       if(data){
         setData(data);
         setError('')
@@ -73,7 +72,9 @@ export default function Data({cat, searchQuery}) {
       {isLoading && <Spinner h={80} w={80}/>}
       {data && data.map((d, i) => (
         <div className={`flex flex-col gap-[20px] items-start w-full md:w-[50%] lg:w-[30%] ${i%2 === 0 ? 'bg-[#DEF2F5]':'bg-[#F7ECE1]' } rounded-[10px] p-[15px]`} key={d.id}>
-          <img className="rounded-[10px] h-[176px] w-full" src={d.cover_photo} alt="" />
+          <div className="">
+            <img className="rounded-[10px] w-full" src={d.cover_photo} alt="" />
+          </div>
           <div>
             <span className="font-playfair font-[700] sm:text-[20px] text-[18px] text-secondary">{d.biz_name}</span>
             <div className='flex gap-[8px]'>
