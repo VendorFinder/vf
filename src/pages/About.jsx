@@ -87,11 +87,11 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="md:px-[100px] px-[30px] mt-[131px]">
-        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[50px]">Meet the Team</h2>
+        <section className="md:px-[100px] px-[30px] sm:mt-[131px] mt-[160px]">
+        <h2 className=" font-playfair text-[#04172A] font-[700] sm:text-[35px] text-[30px] mb-[50px] sm:text-start text-center">Meet the Team</h2>
           <Slide/>
         </section>
-        <section className="md:px-[120px] mt-[131px]">
+        <section className="md:px-[120px] sm:mt-[131px]">
           <div className="bg-[#F7ECE1] md:px-[137px] px-[30px] py-[50px]">
             <h2 className="font-playfair font-[700] sm:text-[35px] text-[30px] text-center text-[#04172A]">The Journey through our works</h2>
             <div className="mt-[66px] flex flex-col gap-[50px]">

@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const PreviousButton = ({ onClick }) => (
-  <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute left-[-20px] z-[1] top-1/2 transform -translate-y-1/2">
+  <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute left-[-20px] z-[1] sm:top-1/2 top-[30%] transform -translate-y-1/2">
     <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944503/prev_eup1qd.png" alt="prev" />
   </button>
 );
 
 const NextButton = ({ onClick }) => (
-  <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[-20px] top-1/2 transform -translate-y-1/2">
+  <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[-20px] sm:top-1/2 top-[30%] transform -translate-y-1/2">
         <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944519/rightarrow_nmzpy8.png" alt="next" />
 
   </button>
@@ -96,8 +96,8 @@ export default function Slide() {
   return (
     <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto  ">
         {team && team.map(m => (          
-        <div key={m.id} className=" w-full sm:h-[520px] h-[400px] flex flex-col items-center justify-center ">
-          <img className="h-[85%] w-full" src={m.picture} alt="team" />
+        <div key={m.id} className=" w-full h-[520px] flex flex-col items-center justify-center ">
+          <img className="sm:h-[85%] h-[60%] w-full" src={m.picture} alt="team" />
           <div className="flex flex-col justify-center items-center mt-[30px]">
             <h3 className="text-body-text-1 font-[600]">{m.name}</h3>
             <span className="text-body-text-2">{m.role}</span>
