@@ -6,28 +6,16 @@ import Data from './Data'
 
 
 
-// assests
-import next from '../../assets/about/next.png'
-import prev from '../../assets/about/prev.png'
-import foodIcon from '../../assets/about/foodIcon.svg'
-import allIcon from '../../assets/about/allIcon.svg'
-import photographyIcon from '../../assets/about/photographyIcon.svg'
-import houseIcon from '../../assets/about/houseIcon.svg'
-import musicIcon from '../../assets/about/musicIcon.svg'
-import decorationIcon from '../../assets/about/decorationIcon.svg'
-
-
-
 
 const PreviousButton = ({ onClick }) => (
   <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute left-[-10px] z-[1] top-[70px] transform -translate-y-1/2">
-    <img src={prev} alt="prev" />
+    <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944503/prev_eup1qd.png" alt="prev" />
   </button>
 );
 
 const NextButton = ({ onClick }) => (
   <button onClick={onClick} className="bg-[#0C4E8B] h-[40px] w-[40px] flex justify-center items-center rounded-[50%] absolute right-[-30px] top-[70px] transform -translate-y-1/2">
-    <img src={next} alt="next" />
+        <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944519/rightarrow_nmzpy8.png" alt="next" />
   </button>
 );
 
@@ -73,37 +61,37 @@ export default function DataSection() {
       <Slider {...settings} className=" flex flex-col gap-[50px] mx-auto mb-[100px] mt-[50px]">
       <div className={`${cat === ''? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={allIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944497/allIcon_ylkgk4.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">All</span>
         </div>
       </div>
       <div className={`${cat === 'Catering'? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('Catering')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={foodIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944500/foodIcon_cozdbu.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">Catering</span>
         </div>
       </div>
             <div className={`${cat === 'Photography'? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('Photography')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={photographyIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944502/photographyIcon_l0jydr.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">Photography</span>
         </div>
       </div>
       <div className={`${cat === 'venues'? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('venues')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={houseIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944501/houseIcon_wkpick.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">Event venues</span>
         </div>
       </div>
             <div className={`${cat === 'Entertainment'? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('Entertainment')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={musicIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944501/musicIcon_dppccz.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">Entertainment</span>
         </div>
       </div>
       <div className={`${cat === 'Decoration'? 'bg-primary text-white' : ''} relative border border-[0.5px] border-[#04172A] w-full h-[130px] cursor-pointer`} onClick={() => setCat('Decoration')}>
         <div className="flex flex-col justify-center items-center gap-[12px] h-full">
-          <img src={decorationIcon} alt="all" />
+          <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944500/decorationIcon_mp1mkl.svg" alt="all" />
           <span className="font-playfair font-[700] sm:text-[20px] text-[18px]">Decoration</span>
         </div>
       </div>

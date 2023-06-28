@@ -1,5 +1,3 @@
-import AL from "../../assets/about/arrowLeft.png";
-import AR from "../../assets/about/arrowRight.png";
 import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import ElectricBoltOutlinedIcon from "@mui/icons-material/ElectricBoltOutlined";
 import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
@@ -11,9 +9,9 @@ const WhyUs = () => {
       <div className="flex flex-col md:flex-row text-white">
         <div className=" text-white pl-6 md:pl-20 pt-8 md:pt-24 md:w-1/3">
           <div className="flex gap-[10px] items-center mb-[10px]">
-            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944498/arrowLeft_zgmle8.png" alt="icon" />
             <span className="sm:text-[16px] text-[18px]">Benefits</span>
-            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+            <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944499/arrowRight_pmf9cx.png" alt="icon" />
           </div>
           <h1 className="font-playfair text-[24px] font-bold">
             Why Use VendorFinder?

@@ -1,15 +1,5 @@
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
-import headerImg from '../assets/seviceheader.png'
-import cateringservice from '../assets/cateringservice.png'
-import snakebg from '../assets/snakebg.png'
-import snakebg2 from '../assets/snakebg2.png'
-import star from '../assets/star.png'
-import star2 from '../assets/star2.png'
-import entertaimentservice from '../assets/entertaimentservice.png'
-import photographyservice from '../assets/photographyservice.png'
-import decorationservice from '../assets/decorationservice.png'
-import eventservice from '../assets/eventservice.png'
 import { Link } from "react-router-dom";
 
 
@@ -18,9 +8,9 @@ const Services = () => {
     <div>
       <NavBar />
       <main>
-        <section className="bg-secondary">
+        <section className="bg-secondary min-h-screen">
           <div className="md:px-[130px] md:pt-[150px] pt-[100px] pb-[57px] relative">
-            <img className="w-full" src={headerImg} alt="header" />
+            <img className="w-full" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944521/seviceheader_jvhbbk.png" alt="header" />
             <div className="flex justify-center absolute bottom-[15px] left-0 w-full">
               <h1 className="font-playfair font-[700] md:text-[40px] text-[30px] bg-secondary text-white md:pt-[29px] md:pb-[10px] md:px-[62px] py-[8px] md:rounded-[10px] text-center">We Offer Exceptional Services</h1>
             </div>
@@ -28,7 +18,7 @@ const Services = () => {
         </section>
         <section className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row items-center w-full md:gap-[6%] gap-[40px] mt-[135px] mb-[65px]">
           <div className="md:w-[47%] w-full">
-            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={cateringservice} alt="cateringservice" />
+            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944504/cateringservice_kqhlfd.png" alt="cateringservice" />
           </div>
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Catering</h2>
@@ -37,11 +27,11 @@ const Services = () => {
           </div>
         </section>
         <section className="relative md:min-h-[1360px] bg-contain mb-[65px] flex items-center">
-        <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src={snakebg} alt="bg" />
-        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star} alt="bg" />
+        <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944520/snakebg_uz9djx.png" alt="bg" />
+        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944520/star_qagu47.png" alt="bg" />
         <div className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row-reverse items-center w-full md:gap-[6%] gap-[120px]">
           <div className="md:w-[47%] w-full">
-            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={entertaimentservice} alt="entertaimentservice" />
+            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944512/entertaimentservice_zsmfqd.png" alt="entertaimentservice" />
           </div>
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Entertainment</h2>
@@ -53,7 +43,7 @@ const Services = () => {
         </section>
         <section className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row items-center w-full md:gap-[6%] gap-[40px] mt-[135px] mb-[65px]">
           <div className="md:w-[47%] w-full">
-            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={photographyservice} alt="photographyservice" />
+            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944519/photographyservice_autvu8.png" alt="photographyservice" />
           </div>
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Photography</h2>
@@ -63,11 +53,11 @@ const Services = () => {
           </div>
         </section>
         <section className="relative md:min-h-[1360px] bg-contain mb-[65px] flex items-center">
-        <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src={snakebg2} alt="bg" />
-        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src={star2} alt="bg" />
+        <img className="absolute md:h-full h-[485px] z-[-1] w-full md:top-0 bottom-[-70px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944520/snakebg2_hvoebk.png" alt="bg" />
+        <img className="absolute z-[-1] md:top-[-250px] top-[110px] right-0 md:h-[440px] md:w-[440px] h-[137px] w-[137px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944520/star2_d1ixpg.png" alt="bg" />
         <div className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row-reverse items-center w-full md:gap-[6%] gap-[120px]">
           <div className="md:w-[47%] w-full">
-            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={decorationservice} alt="decorationservice" />
+            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944505/decorationservice_wsalvb.png" alt="decorationservice" />
           </div>
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Decoration</h2>
@@ -79,7 +69,7 @@ const Services = () => {
         </section>
         <section className="lg:px-[148px] md:px-[100px] px-[30px] flex flex-col-reverse md:flex-row items-center w-full md:gap-[6%] gap-[40px] mt-[135px] mb-[65px]">
           <div className="md:w-[47%] w-full">
-            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src={eventservice} alt="eventservice" />
+            <img className="md:h-full h-[300px] min-w-[300px] mx-auto" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944512/eventservice_xam0ef.png" alt="eventservice" />
           </div>
           <div className="md:w-[47%] w-full flex flex-col gap-[20px]">
             <h2 className="font-playfair font-[700] sm:text-[32px] text-[25px] text-secondary">Event venues</h2>

@@ -1,5 +1,3 @@
-import AL from "../../assets/about/arrowLeft.png";
-import AR from "../../assets/about/arrowRight.png";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -32,9 +30,9 @@ const ContactForm = () => {
       <div className="flex flex-col md:flex-row md:mx-32 md:my-10 md:h-[32rem]  bg-[#0C4E8B] text-white">
         <div className="w-full px-4 md:px-20 pt-10 md:pt-10 md:py-10">
           <div className="flex gap-[10px] items-center mb-[10px]">
-            <img className="h-[5px] w-[30px]" src={AL} alt="icon" />
+            <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944498/arrowLeft_zgmle8.png" alt="icon" />
             <span className="sm:text-[16px] text-[18px]">Contact Us</span>
-            <img className="h-[5px] w-[30px]" src={AR} alt="icon" />
+            <img className="h-[5px] w-[30px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944499/arrowRight_pmf9cx.png" alt="icon" />
           </div>
           <h2 className="text-2xl font-bold mb-6"> Have Questions?</h2>
           <p className="mb-8">

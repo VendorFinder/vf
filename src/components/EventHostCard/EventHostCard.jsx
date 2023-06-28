@@ -1,5 +1,4 @@
 import React from "react";
-import quotationMark from "../../assets/quotationMark.png";
 
 const EventHostCard = ({ imageSrc, title, text }) => {
   return (
@@ -11,7 +10,7 @@ const EventHostCard = ({ imageSrc, title, text }) => {
         <div className="px-6 flex flex-col items-center">
           <div className="font-bold text-xl mb-6 text-center">{title}</div>
           <div className="flex items-center justify-center mb-6">
-            <img src={quotationMark} className="w-7" alt="" />
+            <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944519/quotationMark_idyrvy.png" className="w-7" alt="" />
           </div>
           <p className="text-gray-700 text-base mb-6">{text}</p>
         </div>

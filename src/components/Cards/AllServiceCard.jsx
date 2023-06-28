@@ -1,8 +1,4 @@
 import ServiceCard from "../Cards/ServiceCard";
-import Decoration from "../../assets/Decoration.png";
-import Catering from "../../assets/Catering.png";
-import EventVenues from "../../assets/EventVenues.png";
-import Photography from "../../assets/photo.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,23 +52,23 @@ const AllServiceCard = () => {
     <div className="py-[50px] md:px-[80px] px-[30px]">
       <Slider {...settings} className="py-8 md:py-2 overflow:hidden">
         <ServiceCard
-          img={Decoration}
+          img="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944504/Decoration_ryyh6o.png"
           title="Decoration"
           text="Find talented decorators who possess the artistic vision to bring your event to life and create unforgettable memories."
         />
         <ServiceCard
-          img={Catering}
+          img="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944503/Catering_tblret.png"
           title="Catering"
           text="Browse through a diverse array of catering professionals who specialize in crafting delectable menus and delightful dining experiences. "
           bgColor="bg-[#F7ECE1]"
         />
         <ServiceCard
-          img={EventVenues}
+          img="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944512/EventVenues_i26wdf.png"
           title="Event venues"
           text="Find beautiful even venues that can make your dream event a reality. Our event venues are tailored to every need and preferences."
         />
         <ServiceCard
-          img={Photography}
+          img="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944518/photo_ni5bsb.png"
           title="Photography"
           text="From weddings to corporate events and milestone celebrations, our curated selection of photography vendors offers a unique blend of styles and expertise."
           bgColor="bg-[#F7ECE1]"
