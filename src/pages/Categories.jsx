@@ -30,8 +30,8 @@ const Categories = () => {
   return (
     <div>
       <NavBar />
-      <main className="max-w-[1400px] mx-auto">
-        <section className="flex justify-center h-[475px] items-center bg-secondary mb-[50px] h-[85vh]">
+      <main className="mx-auto">
+        <section className="flex justify-center h-[475px] items-center sm:bg-cat-hero bg-cat-herosm bg-cover mb-[50px] h-[85vh]">
           <div className="font-playfair w-[90%] mx-auto text-center">
             <h1 className="font-[700] md:text-[40px] text-[35px] text-[#FFFFFF]">Seamless Event Planning Starts Here</h1>
           </div>
