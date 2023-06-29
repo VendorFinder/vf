@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       <NavBar />
-      <main className="max-w-[1400px] mx-auto mb-[78px]">
+      <main className="mx-auto mb-[78px]">
         <section className="flex justify-center h-[85vh] items-center bg-about-hero bg-cover bg-t-black">
           <div className="font-playfair border border-[0.5px] py-[48px] sm:w-[547px] w-[90%] mx-auto text-center">
             <h1 className="font-[700] md:text-[50px] text-[35px] text-[#FFFFFF]">WHO ARE WE</h1>
