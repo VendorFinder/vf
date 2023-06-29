@@ -475,7 +475,7 @@ export default function RegisterModal({open, onClose}) {
               </div>
           </label>
           <label className='flex flex-col gap-[10px] font-lato'>
-            <span>Social media profiles(optional)</span>
+            <span>Social media profiles</span>
             <div className='flex flex-col gap-[10px]'>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${instaErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='Instagram' onChange={(e) => handleChangeInsta(e)} value={insta}/>
               <input type="text" className={`py-[16px] px-[20px] rounded-[10px] border border-[0.5] ${whatsappErr ? 'border-[#FF9494]':'border-[#2A2A2A]'} w-full`} placeholder='WhatsApp' onChange={(e) => handleChangeWap(e)} value={whatsapp}/>

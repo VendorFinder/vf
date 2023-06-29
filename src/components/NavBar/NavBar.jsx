@@ -16,7 +16,7 @@ const NavBar = () => {
           <div className="flex justify-between items-center">
             <div className="cursor-pointer">
               <NavLink reloadDocument to="/" className="h-16">
-                <img className="h-[70px] md:h-[100px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1688046499/VENDOR_FINDER_uo75pn.svg" alt="vendorFinder-logo" />
+                <img className="h-[55px] md:h-[80px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687972922/Logo_2_hn3dgg.svg" alt="vendorFinder-logo" />
               </NavLink>
             </div>
             <div
