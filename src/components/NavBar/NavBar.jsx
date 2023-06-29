@@ -16,19 +16,23 @@ const NavBar = () => {
           <div className="flex justify-between items-center">
             <div className="cursor-pointer">
               <NavLink reloadDocument to="/" className="h-16">
-                <img className="h-[55px] md:h-[80px]" src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687972922/Logo_2_hn3dgg.svg" alt="vendorFinder-logo" />
+                <img
+                  className="h-[55px] md:h-[80px]"
+                  src="https://res.cloudinary.com/dlyzcnjem/image/upload/v1688053767/VECTOR_FINDER_044738_grf9eh.svg"
+                  alt="vendorFinder-logo"
+                />
               </NavLink>
             </div>
-            <div
-              onClick={() => setOpen(!open)}
-              className="md:hidden "
-            >
-              <img src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/menu_ocjd0n.svg" alt="menu" />
+            <div onClick={() => setOpen(!open)} className="md:hidden ">
+              <img
+                src="https://res.cloudinary.com/dgizre0g1/image/upload/v1687944516/menu_ocjd0n.svg"
+                alt="menu"
+              />
             </div>
           </div>
           <nav>
             <ul
-              className={`md:flex md:items-center md:justify-end md:w-full md:pb-0 pb-12 absolute md:static bg-secondary md:bg-white mr-20 mb:mr-0   z-[-1] left-0 w-full  md:w-auto  md:pl-0 pl-9 transition-all duration-500 ease-in ${
+              className={`md:flex md:items-center md:justify-end  md:pb-0 pb-12 absolute md:static bg-secondary md:bg-white mr-20 mb:mr-0   z-[-1] left-0 w-full  md:w-auto  md:pl-0 pl-9 transition-all duration-500 ease-in ${
                 open ? "top-20" : "top-[-490px]"
               }`}
             >
